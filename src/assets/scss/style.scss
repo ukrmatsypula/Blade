@@ -1,0 +1,21 @@
+@import "vendor/reset.scss";
+@import "_vars.scss";
+@import "mixins.scss";
+
+:root {
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+}
+
+// Blocks
+@import "blocks/_header.scss";
