@@ -4,3 +4,10 @@
     padding-bottom: $padding-vertical-xs;
   }
 }
+
+.logo {
+  background-color: #5e81fe;
+  width: $base * 6;
+  height: $base * 6;
+  border-radius: 50%;
+}
