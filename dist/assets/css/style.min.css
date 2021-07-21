@@ -1,8 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700&family=Roboto:regular,500,700);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -359,27 +359,56 @@ textarea {
   content: "\e903"; }
 
 :root {
-  font-family: "Heebo";
-  font-weight: 400; }
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500; }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box; }
 
-.container {
-  max-width: 856px;
-  margin: auto; }
-  @media (max-width: 868px) {
-    .container {
-      max-width: 970px; } }
-  @media (max-width: 868px) {
-    .container {
-      max-width: 750px; } }
-  @media (max-width: 868px) {
-    .container {
-      max-width: none;
-      padding: 0 10px; } }
+.section-outer {
+  border-bottom: 1px solid #d8e3fe; }
 
-.header__content {
-  max-width: 1032px; }
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .section-inner--wide {
+    max-width: 1200px; }
+
+.section-header .section-inner {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.section-hero-image {
+  background-color: #f4f7ff; }
+
+.section-customers .section-inner {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.section-stats {
+  background: #E9EFFF; }
+  .section-stats .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+.section-blog {
+  background-color: #f5f8ff; }
+
+.section-quotes {
+  background-color: #eaf0ff; }
+
+.section-get-started {
+  background-color: #6888ff; }
+
+.section-newsletter {
+  background-color: #fcfdff; }
+
+.section-footer {
+  border-bottom: 0; }
+  .section-footer .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px; }

@@ -1,12 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700&family=Roboto:regular,500,700);
 @import "vendor/reset.scss";
 @import "_icons.scss";
-@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
 @import "_vars.scss";
 @import "mixins.scss";
 
 :root {
-  font-family: $fontFamaly;
-  font-weight: 400;
+  @include quicksand;
 }
 
 *,
@@ -18,21 +17,27 @@
 body {
 }
 
-.container {
-  max-width: $maxWidthContainer + px;
-  margin: auto;
+.section-outer {
+  border-bottom: 1px solid $color-divider;
+}
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: $padding-vertical;
+  padding-bottom: $padding-vertical;
 
-  @media (max-width: $md1 + px) {
-    max-width: 970px;
-  }
-  @media (max-width: $md1 + px) {
-    max-width: 750px;
-  }
-  @media (max-width: $md1 + px) {
-    max-width: none;
-    padding: 0 10px;
+  &--wide {
+    max-width: 1200px;
   }
 }
 
 // Blocks
 @import "blocks/_header.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_customers.scss";
+@import "blocks/_stats.scss";
+@import "blocks/_blog.scss";
+@import "blocks/_quotes.scss";
+@import "blocks/_get-started.scss";
+@import "blocks/_newsletter.scss";
+@import "blocks/_footer.scss";

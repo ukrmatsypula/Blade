@@ -1,5 +1,6 @@
-.header {
-  &__content {
-    max-width: 1032px;
+.section-header {
+  .section-inner {
+    padding-top: $padding-vertical-xs;
+    padding-bottom: $padding-vertical-xs;
   }
 }
