@@ -366,3 +366,20 @@ textarea {
 *::after,
 *::before {
   box-sizing: border-box; }
+
+.container {
+  max-width: 856px;
+  margin: auto; }
+  @media (max-width: 868px) {
+    .container {
+      max-width: 970px; } }
+  @media (max-width: 868px) {
+    .container {
+      max-width: 750px; } }
+  @media (max-width: 868px) {
+    .container {
+      max-width: none;
+      padding: 0 10px; } }
+
+.header__content {
+  max-width: 1032px; }
