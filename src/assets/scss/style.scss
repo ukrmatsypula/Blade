@@ -1,9 +1,12 @@
 @import "vendor/reset.scss";
+@import "_icons.scss";
 @import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
 @import "_vars.scss";
 @import "mixins.scss";
 
 :root {
+  font-family: $fontFamaly;
+  font-weight: 400;
 }
 
 *,
