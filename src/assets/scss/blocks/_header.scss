@@ -48,19 +48,28 @@
 }
 
 .socials {
-  .socials-wrapper {
-    display: flex;
-    &__item {
-      & + & {
-        margin-left: $base * 10;
-      }
-      &-link {
-        // transition: color $transition linear;
+  margin-left: auto;
 
-        // &:hover {
-        //   color: #5e81fe;
-        // }
-      }
+  & svg {
+    fill: #b6bac7;
+    transition: fill 0.2s linear;
+
+    &:hover {
+      fill: #6188ff;
+    }
+  }
+}
+
+.socials-wrapper {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    & + & {
+      margin-left: $base * 10;
+    }
+
+    &-link {
     }
   }
 }

@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700&family=Roboto:regular,500,700);
-@import "vendor/reset.scss";
-@import "_icons.scss";
 @import "_vars.scss";
 @import "mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700&family=Roboto:regular,500,700);
+@import "_icons.scss";
 
 :root {
   @include quicksand;
@@ -31,7 +30,11 @@ body {
   }
 }
 
+//Vendor
+@import "vendor/reset.scss";
+
 // Blocks
+@import "_icons.scss";
 @import "blocks/_header.scss";
 @import "blocks/_hero.scss";
 @import "blocks/_customers.scss";
