@@ -5,9 +5,44 @@
   }
 }
 
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   background-color: #5e81fe;
   width: $base * 6;
   height: $base * 6;
   border-radius: 50%;
+}
+
+.nav {
+  margin-left: $base * 18;
+}
+
+.nav-wrapper {
+  display: flex;
+  &__item {
+    & + & {
+      margin-left: $base * 10;
+    }
+    &-link {
+      font-size: 12px;
+      color: #697ca6;
+      text-decoration: none;
+      letter-spacing: 5%;
+      font-weight: $fw-medium;
+      transition: color $transition linear;
+
+      &:hover {
+        color: #5e81fe;
+      }
+
+      &--active {
+        font-weight: $fw-bold;
+        color: #5e81fe;
+      }
+    }
+  }
 }

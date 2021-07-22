@@ -402,12 +402,17 @@ textarea {
 
 :root {
     font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+.section-outer {
+    border-bottom: 1px solid #d8e3fe;
 }
 
 .section-inner {
@@ -426,8 +431,62 @@ textarea {
     padding-bottom: 20px;
 }
 
+.main-navigation {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.logo {
+    background-color: #5e81fe;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.nav-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.section-hero-image {
+    background-color: #f4f7ff;
+}
+
 .section-customers .section-inner {
     padding-top: 60px;
     padding-bottom: 60px;
-    border: 1px solid red;
+}
+
+.section-stats {
+    background: #E9EFFF;
+}
+
+.section-stats .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-blog {
+    background-color: #f5f8ff;
+}
+
+.section-quotes {
+    background-color: #eaf0ff;
+}
+
+.section-get-started {
+    background-color: #6888ff;
+}
+
+.section-newsletter {
+    background-color: #fcfdff;
+}
+
+.section-footer {
+    border-bottom: 0;
+}
+
+.section-footer .section-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }

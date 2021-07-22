@@ -382,11 +382,35 @@ textarea {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.main-navigation {
+  display: flex;
+  align-items: center; }
+
 .logo {
   background-color: #5e81fe;
   width: 24px;
   height: 24px;
   border-radius: 50%; }
+
+.nav {
+  margin-left: 72px; }
+
+.nav-wrapper {
+  display: flex; }
+  .nav-wrapper__item + .nav-wrapper__item {
+    margin-left: 40px; }
+  .nav-wrapper__item-link {
+    font-size: 12px;
+    color: #697ca6;
+    text-decoration: none;
+    letter-spacing: 5%;
+    font-weight: 500;
+    transition: color 0.2s linear; }
+    .nav-wrapper__item-link:hover {
+      color: #5e81fe; }
+    .nav-wrapper__item-link--active {
+      font-weight: 700;
+      color: #5e81fe; }
 
 .section-hero-image {
   background-color: #f4f7ff; }
