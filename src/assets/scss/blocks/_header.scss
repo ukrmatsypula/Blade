@@ -28,20 +28,20 @@
       margin-left: $base * 10;
     }
     &-link {
-      font-size: 12px;
-      color: #697ca6;
+      font-size: $fs-sm;
+      color: $color-primary;
       text-decoration: none;
       letter-spacing: 5%;
       font-weight: $fw-medium;
       transition: color $transition linear;
 
       &:hover {
-        color: #5e81fe;
+        color: $color-secondary;
       }
 
       &--active {
         font-weight: $fw-bold;
-        color: #5e81fe;
+        color: $color-secondary;
       }
     }
   }
@@ -51,7 +51,7 @@
   margin-left: auto;
 
   & svg {
-    fill: #b6bac7;
+    fill: $color-primary;
     transition: fill 0.2s linear;
 
     &:hover {

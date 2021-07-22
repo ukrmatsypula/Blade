@@ -10,7 +10,7 @@
   border: 0;
   text-decoration: none;
   font-weight: $fw-bold;
-  font-size: 13px;
+  font-size: $fs-sm;
   transition: background-color $transition linear, color 0.2s linear;
 
   &--primary {

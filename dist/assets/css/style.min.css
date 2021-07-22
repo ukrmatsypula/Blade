@@ -402,7 +402,7 @@ textarea {
   border: 0;
   text-decoration: none;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
   transition: background-color 0.2s linear, color 0.2s linear; }
   .btn--primary {
     background-color: #d2e1ff;
@@ -439,15 +439,15 @@ textarea {
     font-weight: 500;
     transition: color 0.2s linear; }
     .nav-wrapper__item-link:hover {
-      color: #5e81fe; }
+      color: #6188ff; }
     .nav-wrapper__item-link--active {
       font-weight: 700;
-      color: #5e81fe; }
+      color: #6188ff; }
 
 .socials {
   margin-left: auto; }
   .socials svg {
-    fill: #b6bac7;
+    fill: #697ca6;
     transition: fill 0.2s linear; }
     .socials svg:hover {
       fill: #6188ff; }
