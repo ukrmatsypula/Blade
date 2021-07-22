@@ -391,6 +391,25 @@ textarea {
   width: 16px;
   height: 12px; }
 
+.btn-wrapper {
+  margin-left: 44px; }
+
+.btn {
+  padding: 12px 16px;
+  margin: 0;
+  background-color: none;
+  border-radius: 2px;
+  border: 0;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background-color 0.2s linear, color 0.2s linear; }
+  .btn--primary {
+    background-color: #d2e1ff;
+    color: #3a79ff; }
+    .btn--primary:hover {
+      background-color: #b9d0ff; }
+
 .section-header .section-inner {
   padding-top: 20px;
   padding-bottom: 20px; }

@@ -1,0 +1,24 @@
+.btn-wrapper {
+  margin-left: $base * 11;
+}
+
+.btn {
+  padding: $base * 3 $base * 4;
+  margin: 0;
+  background-color: none;
+  border-radius: 2px;
+  border: 0;
+  text-decoration: none;
+  font-weight: $fw-bold;
+  font-size: 13px;
+  transition: background-color $transition linear, color 0.2s linear;
+
+  &--primary {
+    background-color: #d2e1ff;
+    color: #3a79ff;
+
+    &:hover {
+      background-color: darken(#d2e1ff, 5%);
+    }
+  }
+}
