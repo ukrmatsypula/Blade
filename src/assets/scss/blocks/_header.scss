@@ -46,3 +46,21 @@
     }
   }
 }
+
+.socials {
+  .socials-wrapper {
+    display: flex;
+    &__item {
+      & + & {
+        margin-left: $base * 10;
+      }
+      &-link {
+        // transition: color $transition linear;
+
+        // &:hover {
+        //   color: #5e81fe;
+        // }
+      }
+    }
+  }
+}

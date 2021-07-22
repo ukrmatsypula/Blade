@@ -412,6 +412,11 @@ textarea {
       font-weight: 700;
       color: #5e81fe; }
 
+.socials .socials-wrapper {
+  display: flex; }
+  .socials .socials-wrapper__item + .socials .socials-wrapper__item {
+    margin-left: 40px; }
+
 .section-hero-image {
   background-color: #f4f7ff; }
 
