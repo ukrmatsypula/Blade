@@ -488,3 +488,11 @@ textarea {
   .section-footer .section-inner {
     padding-top: 60px;
     padding-bottom: 60px; }
+
+.copyright {
+  margin-left: 96px;
+  margin-top: 28px;
+  font-size: 12px;
+  letter-spacing: 5%;
+  font-weight: 500;
+  color: #aeb8d0; }

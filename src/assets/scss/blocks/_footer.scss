@@ -5,3 +5,12 @@
     padding-bottom: $padding-vertical-sm;
   }
 }
+
+.copyright {
+  margin-left: $base * 24;
+  margin-top: $base * 7;
+  font-size: $fs-sm;
+  letter-spacing: 5%;
+  font-weight: $fw-medium;
+  color: #aeb8d0;
+}
