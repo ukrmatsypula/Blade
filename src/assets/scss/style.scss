@@ -1,3 +1,6 @@
+//Vendor
+@import "vendor/reset.scss";
+
 @import "_vars.scss";
 @import "mixins.scss";
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,700&family=Roboto:regular,500,700);
@@ -5,6 +8,7 @@
 
 :root {
   @include quicksand;
+  color: #8d96bd;
 }
 
 *,
@@ -12,8 +16,35 @@
 *::before {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3d4f9f;
+}
+h2 {
+  font-size: 48px;
+  margin-bottom: $base * 7;
+}
 
-body {
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  @include roboto;
+  font-size: 10px;
+  margin-bottom: $base * 4;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .section-outer {
@@ -30,14 +61,11 @@ body {
   }
 }
 
-//Vendor
-@import "vendor/reset.scss";
-
 // Blocks
 @import "_icons.scss";
 @import "blocks/_buttons.scss";
 @import "blocks/_header.scss";
-@import "blocks/_hero.scss";
+@import "blocks/_hero-image.scss";
 @import "blocks/_customers.scss";
 @import "blocks/_stats.scss";
 @import "blocks/_blog.scss";
