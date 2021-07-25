@@ -1,0 +1,49 @@
+.section-plan-and-manage {
+  position: relative;
+  &__content {
+    width: 50%;
+
+    .aside-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 1;
+    }
+
+    h3 {
+      span {
+        font-weight: $fw-light;
+      }
+    }
+
+    .text {
+      @include roboto;
+      line-height: 2;
+      margin-bottom: $base * 12;
+    }
+
+    .btns {
+      display: flex;
+
+      .play {
+        position: relative;
+        padding-left: 25px;
+        padding-right: 35px;
+
+        .icon {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 2;
+          width: $base * 2;
+          height: $base * 2;
+
+          &.icon--play {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

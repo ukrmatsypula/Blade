@@ -31,6 +31,7 @@ h2 {
 
 h3 {
   font-size: 36px;
+  margin-bottom: $base * 7;
 }
 
 h4 {
@@ -87,6 +88,7 @@ h5 {
 @import "blocks/_header.scss";
 @import "blocks/_hero-image.scss";
 @import "blocks/_customers.scss";
+@import "blocks/plan-and-manage";
 @import "blocks/_stats.scss";
 @import "blocks/_blog.scss";
 @import "blocks/_quotes.scss";

@@ -3,11 +3,12 @@
 }
 
 .btn {
-  padding: $base * 3 $base * 4;
+  @include quicksand;
+  padding: $base * 3 $base * 5;
   margin: 0;
   background-color: none;
   border-radius: 2px;
-  border: 0;
+  border: 1px solid transparent;
   text-decoration: none;
   font-weight: $fw-bold;
   font-size: $fs-sm;
@@ -19,6 +20,32 @@
 
     &:hover {
       background-color: darken(#d2e1ff, 5%);
+    }
+  }
+
+  &--secondary {
+    background-color: #4c85ff;
+    color: #fff;
+    font-weight: $fw-bold;
+    border-radius: 2px 0 0 2px;
+    padding: $base * 3 $base * 5;
+
+    &:hover {
+      background-color: darken(#4c85ff, 5%);
+    }
+  }
+
+  &--without-bg {
+    background-color: #f5f8ff;
+    color: #adb4d2;
+    border: 1px solid #d1d1e4;
+    border-radius: 0 2px 2px 0;
+    font-weight: $fw-medium;
+    transition: border-color $transition linear, color $transition linear;
+
+    &:hover {
+      border-color: darken(#d1d1e4, 10%);
+      color: darken(#adb4d2, 10%);
     }
   }
 }
