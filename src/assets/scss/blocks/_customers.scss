@@ -1,6 +1,22 @@
 .section-customers {
   .section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: $padding-vertical-sm;
     padding-bottom: $padding-vertical-sm;
+
+    a {
+      svg {
+        transition: fill $transition linear;
+        width: 116px;
+        height: 25.6px;
+        fill: #d6dae5;
+
+        &:hover {
+          fill: #5982e7;
+        }
+      }
+    }
   }
 }

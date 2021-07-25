@@ -549,8 +549,18 @@ h5 {
     border: 0; }
 
 .section-customers .section-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px; }
+  .section-customers .section-inner a svg {
+    transition: fill 0.2s linear;
+    width: 116px;
+    height: 25.6px;
+    fill: #d6dae5; }
+    .section-customers .section-inner a svg:hover {
+      fill: #5982e7; }
 
 .section-stats {
   background: #E9EFFF; }
