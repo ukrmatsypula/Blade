@@ -1,6 +1,7 @@
 .icon {
   width: $base * 4;
   height: $base * 4;
+  fill: #fff;
 }
 
 .icon--facebook {
@@ -32,4 +33,25 @@
   width: 10px;
   height: 10px;
   fill: #5e81ff;
+}
+
+.icon--home {
+  fill: #fff;
+  width: 14px;
+  height: 17px;
+}
+.icon--folder {
+  fill: #fff;
+  width: 23px;
+  height: 14px;
+}
+.icon--message {
+  fill: #fff;
+  width: 17px;
+  height: 15px;
+}
+.icon--up-arrow {
+  fill: #fff;
+  width: 17px;
+  height: 15px;
 }
