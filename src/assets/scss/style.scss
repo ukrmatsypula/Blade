@@ -50,6 +50,23 @@ h5 {
   text-align: center;
 }
 
+.or-block {
+  display: inline-flex;
+  align-items: center;
+  font-weight: $fw-medium;
+  font-size: $fs-sm;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    width: $base * 4;
+    height: 1px;
+    background-color: #dae4fe;
+    margin: 0 $base * 4;
+  }
+}
+
 .dots {
   display: flex;
 

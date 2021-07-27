@@ -48,4 +48,14 @@
       color: darken(#adb4d2, 10%);
     }
   }
+
+  &--danger {
+    background-color: #ffd7d7;
+    color: #d43f3f;
+
+    &:hover {
+      background-color: darken(#ffd7d7, 5%);
+      color: darken(#d43f3f, 5%);
+    }
+  }
 }
