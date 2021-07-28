@@ -898,7 +898,42 @@ h5 {
       stroke: #8192d9; }
 
 .section-quotes {
-  background-color: #eaf0ff; }
+  background: linear-gradient(#eaf0ff, #f6f9ff); }
+  .section-quotes .section-inner {
+    display: flex;
+    justify-content: space-between; }
+  .section-quotes__left, .section-quotes__right {
+    flex-basis: 45%; }
+  .section-quotes__left .text {
+    line-height: 2; }
+  .section-quotes__right .dots {
+    justify-content: center; }
+  .section-quotes .slider-quotes__item {
+    border: 1px solid #d8e3fe;
+    background: #fff;
+    padding: 40px 40px 68px;
+    position: relative;
+    margin-bottom: 76px;
+    box-shadow: 0 5px 50px #f3f5fa; }
+    .section-quotes .slider-quotes__item-text {
+      line-height: 2;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-size: 15px;
+      color: #676f95; }
+    .section-quotes .slider-quotes__item-photo {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      background-color: lightpink;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background: #333 url(../../assets/images/uploads/quote-photo.svg) no-repeat center; }
 
 .section-get-started {
   background-color: #6888ff; }
