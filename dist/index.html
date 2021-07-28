@@ -243,6 +243,33 @@
           </svg>
         </g>
       </symbol>
+    
+      <symbol id="icon-zoom" viewBox="0 0 19 18">
+        <g>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.17224 11.9475C9.90362 11.9475 12.1138 9.73657 12.1138 7.01428C12.1138 4.29199 9.90362 2.08105 7.17224 2.08105C4.44085 2.08105 2.23071 4.29199 2.23071 7.01428C2.23071 9.73657 4.44085 11.9475 7.17224 11.9475ZM7.17224 13.9475C11.0059 13.9475 14.1138 10.8434 14.1138 7.01428C14.1138 3.18517 11.0059 0.0810547 7.17224 0.0810547C3.33854 0.0810547 0.230713 3.18517 0.230713 7.01428C0.230713 10.8434 3.33854 13.9475 7.17224 13.9475Z"
+            fill="#A7AAC6"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.4228 11.2599C11.8131 10.8691 12.4463 10.8687 12.8371 11.259L17.7953 16.2113C18.186 16.6016 18.1864 17.2348 17.7961 17.6255C17.4058 18.0163 16.7727 18.0167 16.3819 17.6264L11.4237 12.6741C11.0329 12.2838 11.0326 11.6506 11.4228 11.2599Z"
+          />
+        </g>
+      </symbol>
+    
+      <symbol id="icon-slider-arrow" viewBox="0 0 27 19">
+        <g>
+          <path
+            d="M25 9.5L2 9.5M2 9.5L9.81132 17M2 9.5L9.81132 2"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
     </svg>
     <div class="page">
       <header class="section-outer section-header">
@@ -501,9 +528,24 @@
             <ul class="slider-blog">
               <li class="slider-blog__item">
                 <div class="slider-blog__item-gallery">
-                  <a href="#" class="image-link image-link--b"></a>
-                  <a href="#" class="image-link image-link--s-1"></a>
-                  <a href="#" class="image-link image-link--s-2"></a>
+                  <a href="#" class="image-link image-link--b">
+                    <svg class="icon icon--zoom">
+                      <use xlink:href="#icon-zoom"></use>
+                    </svg>
+                    <img src="assets/images/blog/blog-1.png" alt="" />
+                  </a>
+                  <a href="#" class="image-link image-link--s-1">
+                    <svg class="icon icon--zoom">
+                      <use xlink:href="#icon-zoom"></use>
+                    </svg>
+                    <img src="assets/images/blog/blog-2.png" alt="" />
+                  </a>
+                  <a href="#" class="image-link image-link--s-2">
+                    <svg class="icon icon--zoom">
+                      <use xlink:href="#icon-zoom"></use>
+                    </svg>
+                    <img src="assets/images/blog/blog-3.png" alt="" />
+                  </a>
                 </div>
                 <div class="slider-blog__item-content">
                   <h3 class="title">How to start planning</h3>
@@ -520,6 +562,17 @@
                 </div>
               </li>
             </ul>
+        
+            <button class="btn-blog btn-blog--prev">
+              <svg class="icon blog-slider-arrow">
+                <use xlink:href="#icon-slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="btn-blog btn-blog--next">
+              <svg class="icon blog-slider-arrow">
+                <use xlink:href="#icon-slider-arrow"></use>
+              </svg>
+            </button>
         
             <ul class="dots">
               <li class="dots__item dots__item--active"></li>
