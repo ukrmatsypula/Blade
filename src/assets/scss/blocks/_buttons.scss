@@ -4,6 +4,7 @@
 
 .btn {
   @include quicksand;
+  display: inline-block;
   padding: $base * 3 $base * 5;
   margin: 0;
   background-color: none;
@@ -13,6 +14,7 @@
   font-weight: $fw-bold;
   font-size: $fs-sm;
   transition: background-color $transition linear, color 0.2s linear;
+  white-space: nowrap;
 
   &--primary {
     background-color: #d2e1ff;
@@ -56,6 +58,17 @@
     &:hover {
       background-color: darken(#ffd7d7, 5%);
       color: darken(#d43f3f, 5%);
+    }
+  }
+
+  &--grayscale {
+    background-color: #e8ecf4;
+    color: #7382a3;
+    font-weight: $fw-medium;
+
+    &:hover {
+      background-color: darken(#e8ecf4, 5%);
+      color: darken(#7382a3, 5%);
     }
   }
 }

@@ -516,6 +516,7 @@ h5 {
 .btn {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
+  display: inline-block;
   padding: 12px 20px;
   margin: 0;
   background-color: none;
@@ -524,7 +525,8 @@ h5 {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
-  transition: background-color 0.2s linear, color 0.2s linear; }
+  transition: background-color 0.2s linear, color 0.2s linear;
+  white-space: nowrap; }
   .btn--primary {
     background-color: #d2e1ff;
     color: #3a79ff; }
@@ -554,6 +556,13 @@ h5 {
     .btn--danger:hover {
       background-color: #ffbebe;
       color: #cc2e2e; }
+  .btn--grayscale {
+    background-color: #e8ecf4;
+    color: #7382a3;
+    font-weight: 500; }
+    .btn--grayscale:hover {
+      background-color: #d7deec;
+      color: #647498; }
 
 .section-header .section-inner {
   padding-top: 20px;
@@ -934,6 +943,41 @@ h5 {
       height: 60px;
       border-radius: 100%;
       background: #333 url(../../assets/images/uploads/quote-photo.svg) no-repeat center; }
+
+.faq-accordion__item {
+  border-bottom: 1px solid #d8e3fe; }
+  .faq-accordion__item--active {
+    transition: stroke 0.2s linear; }
+    .faq-accordion__item--active .faq-accordion__item-trigger {
+      color: #495274;
+      font-weight: 700; }
+      .faq-accordion__item--active .faq-accordion__item-trigger-icon {
+        stroke: #495274;
+        transform: rotate(180deg); }
+    .faq-accordion__item--active .faq-accordion__item-content {
+      display: flex; }
+  .faq-accordion__item-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 16px; }
+    .faq-accordion__item-trigger-icon {
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+      stroke: #8e96b7;
+      transition: transform 0.2s linear, stroke 0.2s linear; }
+  .faq-accordion__item-content {
+    display: none;
+    padding: 0 16px 16px; }
+    .faq-accordion__item-content-text {
+      font-family: "Roboto", sans-serif;
+      flex-grow: 1;
+      line-height: 2;
+      padding-left: 64px;
+      font-size: 15px; }
+    .faq-accordion__item-content-btn {
+      margin-left: 60px; }
 
 .section-get-started {
   background-color: #6888ff; }

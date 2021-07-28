@@ -1,0 +1,56 @@
+.faq-accordion {
+  &__item {
+    $parent: &;
+
+    border-bottom: 1px solid #d8e3fe;
+
+    &--active {
+      transition: stroke $transition linear;
+
+      #{$parent}-trigger {
+        color: #495274;
+        font-weight: $fw-bold;
+
+        &-icon {
+          stroke: #495274;
+          transform: rotate(180deg);
+        }
+      }
+
+      #{$parent}-content {
+        display: flex;
+      }
+    }
+
+    &-trigger {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: $base * 4;
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+        padding: $base * 4;
+        stroke: #8e96b7;
+        transition: transform $transition linear, stroke $transition linear;
+      }
+    }
+
+    &-content {
+      display: none;
+      padding: 0 $base * 4 $base * 4;
+
+      &-text {
+        @include roboto;
+        flex-grow: 1;
+        line-height: 2;
+        padding-left: $base * 16;
+        font-size: $fs-md;
+      }
+      &-btn {
+        margin-left: $base * 15;
+      }
+    }
+  }
+}
