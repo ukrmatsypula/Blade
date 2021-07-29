@@ -1,3 +1,62 @@
 .section-get-started {
-  background-color: #6888ff;
+  background: url(../../../assets/images/faq-bg.svg) no-repeat center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(#577afa, #5e80ff);
+  }
+
+  h2,
+  h5 {
+    color: #fff;
+  }
+
+  h2 {
+    span {
+      font-weight: $fw-light;
+    }
+  }
+
+  .text {
+    max-width: 80%;
+    line-height: 2;
+    margin: 0 auto $base * 15;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+
+    .btn--secondary {
+      font-weight: $fw-bold;
+      background-color: #fff;
+      color: #565f82;
+
+      &:hover {
+        background-color: darken(#fff, 10%);
+        color: darken(#565f82, 10%);
+      }
+    }
+
+    .btn--without-bg {
+      font-weight: $fw-medium;
+      color: #c7d3ff;
+      border-color: #a0b4ff;
+
+      &:hover {
+        border-color: darken(#a0b4ff, 5%);
+        color: darken(#c7d3ff, 5%);
+      }
+    }
+  }
 }

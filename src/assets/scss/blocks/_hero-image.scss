@@ -28,7 +28,7 @@
       .text {
         @include roboto;
         font-size: 15px;
-        width: 55%;
+        max-width: 55%;
         line-height: 2;
         margin: 0 auto 20px;
         letter-spacing: 0.5px;
