@@ -8,7 +8,7 @@
   padding: $base * 3 $base * 5;
   margin: 0;
   background-color: none;
-  border-radius: 2px;
+  border-radius: $base / 2;
   border: 1px solid transparent;
   text-decoration: none;
   font-weight: $fw-bold;
@@ -30,7 +30,7 @@
     background-color: #4c85ff;
     color: #fff;
     font-weight: $fw-bold;
-    border-radius: 2px 0 0 2px;
+    border-radius: $base / 2 0 0 $base / 2;
     padding: $base * 3 $base * 5;
 
     &:hover {
@@ -42,7 +42,7 @@
     background-color: transparent;
     color: #adb4d2;
     border: 1px solid #d1d1e4;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 $base / 2 $base / 2 0;
     font-weight: $fw-medium;
     transition: border-color $transition linear, color $transition linear;
 

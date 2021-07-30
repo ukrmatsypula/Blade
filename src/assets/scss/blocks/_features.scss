@@ -19,7 +19,7 @@
         content: "";
         height: 1px;
         background-color: #dae4fe;
-        width: 28px;
+        width: $base * 7;
         position: absolute;
         top: 50%;
         right: 110%;
@@ -38,7 +38,7 @@
         transition: box-shadow $transition linear;
 
         &:hover {
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 $base $base rgba(0, 0, 0, 0.3);
         }
 
         .icon {

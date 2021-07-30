@@ -51,13 +51,13 @@ h5 {
   padding: $base * 3 $base * 4;
   border: 1px solid transparent;
   background: #efeff7;
-  border-radius: 2px;
+  border-radius: $base / 2;
   color: #7a85ad;
   font-size: $fs-sm;
 
   &--size-lg {
     padding: $base * 5 $base * 6;
-    border-radius: 5px;
+    border-radius: $base;
   }
 
   &::placeholder {

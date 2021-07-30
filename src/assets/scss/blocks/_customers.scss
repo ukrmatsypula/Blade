@@ -9,8 +9,8 @@
     a {
       svg {
         transition: fill $transition linear;
-        width: 116px;
-        height: 25.6px;
+        width: $base * 29;
+        height: $base * 6;
         fill: #d6dae5;
 
         &:hover {

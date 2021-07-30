@@ -11,7 +11,7 @@
       border: 1px solid #d8e3fe;
       background-color: #fff;
       margin-bottom: $base * 25;
-      box-shadow: 0 15px 50px #f0f5ff;
+      box-shadow: 0 $base * 4 $base * 12 #f0f5ff;
 
       &__item {
         display: flex;
@@ -31,7 +31,7 @@
 
           .image-link {
             display: block;
-            border-radius: 5px;
+            border-radius: $base;
             position: relative;
             overflow: hidden;
 
@@ -115,7 +115,7 @@
             }
 
             img {
-              box-shadow: 0 15px 100px #e5ebf8;
+              box-shadow: 0 $base * 4 $base * 25 #e5ebf8;
             }
 
             &:hover {
@@ -185,8 +185,8 @@
 
     .blog-slider-arrow {
       stroke: #a8b4e5;
-      width: 23px;
-      height: 15px;
+      width: $base * 6;
+      height: $base * 4;
     }
 
     &:hover {

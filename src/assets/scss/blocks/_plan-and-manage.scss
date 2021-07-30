@@ -27,12 +27,12 @@
 
       .play {
         position: relative;
-        padding-left: 25px;
-        padding-right: 35px;
+        padding-left: $base * 6;
+        padding-right: $base * 9;
 
         .icon {
           position: absolute;
-          right: 20px;
+          right: $base * 5;
           top: 50%;
           transform: translateY(-50%);
           z-index: 2;

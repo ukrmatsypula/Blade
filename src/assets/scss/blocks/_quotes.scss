@@ -29,7 +29,7 @@
       padding: $base * 10 $base * 10 $base * 17;
       position: relative;
       margin-bottom: $base * 19;
-      box-shadow: 0 5px 50px #f3f5fa;
+      box-shadow: 0 $base $base * 12 #f3f5fa;
 
       &-text {
         line-height: 2;

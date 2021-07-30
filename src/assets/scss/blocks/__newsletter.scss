@@ -31,12 +31,13 @@
     display: flex;
     justify-content: space-between;
 
-    .input {
+    &__input {
       flex: 1;
     }
 
-    .btn {
+    &__btn {
       margin-left: $base * 3;
+      border-radius: $base;
     }
   }
 }
