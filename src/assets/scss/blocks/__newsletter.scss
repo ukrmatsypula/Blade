@@ -1,3 +1,42 @@
 .section-newsletter {
   background-color: #fcfdff;
+
+  .section-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    flex-basis: 35%;
+
+    &-title {
+      font-weight: $fw-bold;
+      font-size: $fs-lg;
+      color: #3d4f9f;
+      margin-bottom: $base * 4;
+    }
+    &-text {
+      @include roboto;
+      font-size: $fs-md;
+      line-height: 2;
+      color: #8d96bd;
+    }
+  }
+
+  &__right {
+    flex-basis: 53%;
+  }
+
+  .form-newsletter {
+    display: flex;
+    justify-content: space-between;
+
+    .input {
+      flex: 1;
+    }
+
+    .btn {
+      margin-left: $base * 3;
+    }
+  }
 }

@@ -15,6 +15,7 @@
   font-size: $fs-sm;
   transition: background-color $transition linear, color 0.2s linear;
   white-space: nowrap;
+  cursor: pointer;
 
   &--primary {
     background-color: #d2e1ff;
@@ -70,5 +71,9 @@
       background-color: darken(#e8ecf4, 5%);
       color: darken(#7382a3, 5%);
     }
+  }
+
+  &--size-lg {
+    padding: $base * 5 $base * 16;
   }
 }

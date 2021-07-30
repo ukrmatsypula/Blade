@@ -47,6 +47,26 @@ h5 {
   letter-spacing: 1px;
 }
 
+.input {
+  padding: $base * 3 $base * 4;
+  border: 1px solid transparent;
+  background: #efeff7;
+  border-radius: 2px;
+  color: #7a85ad;
+  font-size: $fs-sm;
+
+  &--size-lg {
+    padding: $base * 5 $base * 6;
+    border-radius: 5px;
+  }
+
+  &::placeholder {
+    color: #7a85ad;
+    font-weight: $fw-bold;
+    font-size: $fs-sm;
+  }
+}
+
 .txt-center {
   text-align: center;
 }
