@@ -9,7 +9,7 @@
 
     .slider-blog {
       border: 1px solid #d8e3fe;
-      background-color: #fff;
+      background-color: $color-white;
       margin-bottom: $base * 25;
       box-shadow: 0 $base * 4 $base * 12 #f0f5ff;
 
@@ -24,8 +24,8 @@
 
         &-gallery {
           display: grid;
-          grid-template-columns: repeat(2, 120px);
-          grid-template-rows: repeat(2, 120px);
+          grid-template-columns: repeat(2, $base * 30);
+          grid-template-rows: repeat(2, $base * 30);
           gap: $base * 3;
           flex-basis: 45%;
 
@@ -51,7 +51,7 @@
               display: block;
               width: $base * 16;
               height: $base * 16;
-              background: #fff;
+              background: $color-white;
               border-radius: 100%;
               position: absolute;
               top: 50%;

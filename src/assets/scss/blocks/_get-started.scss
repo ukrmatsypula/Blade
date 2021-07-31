@@ -1,6 +1,6 @@
 .section-get-started {
   background: url(../../../assets/images/faq-bg.svg) no-repeat center;
-  color: #fff;
+  color: $color-white;
   text-align: center;
   position: relative;
 
@@ -18,7 +18,7 @@
 
   h2,
   h5 {
-    color: #fff;
+    color: $color-white;
   }
 
   h2 {
@@ -39,11 +39,11 @@
 
     .btn--secondary {
       font-weight: $fw-bold;
-      background-color: #fff;
+      background-color: $color-white;
       color: #565f82;
 
       &:hover {
-        background-color: darken(#fff, 10%);
+        background-color: darken($color-white, 10%);
         color: darken(#565f82, 10%);
       }
     }
