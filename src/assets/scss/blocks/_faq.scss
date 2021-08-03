@@ -8,11 +8,11 @@
       transition: stroke $transition linear;
 
       #{$parent}-trigger {
-        color: #495274;
+        color: $color-primary;
         font-weight: $fw-bold;
 
         &-icon {
-          stroke: #495274;
+          stroke: $color-primary;
           transform: rotate(180deg);
         }
       }

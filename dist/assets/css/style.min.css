@@ -606,7 +606,7 @@ h5 {
     margin-left: 40px; }
   .nav-wrapper__item-link {
     font-size: 12px;
-    color: #697ca6;
+    color: #495274;
     text-decoration: none;
     letter-spacing: 5%;
     font-weight: 500;
@@ -620,7 +620,7 @@ h5 {
 .socials {
   margin-left: auto; }
   .socials svg {
-    fill: #697ca6;
+    fill: #495274;
     transition: fill 0.2s linear; }
     .socials svg:hover {
       fill: #6188ff; }
