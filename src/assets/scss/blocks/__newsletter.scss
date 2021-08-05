@@ -12,14 +12,14 @@
     &-title {
       font-weight: $fw-bold;
       font-size: $fs-lg;
-      color: #3d4f9f;
+      color: $color-secondary-900;
       margin-bottom: $base * 4;
     }
     &-text {
       @include roboto;
       font-size: $fs-md;
       line-height: 2;
-      color: #8d96bd;
+      color: $color-primary-500;
     }
   }
 

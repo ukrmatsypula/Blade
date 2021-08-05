@@ -83,10 +83,7 @@
               position: relative;
 
               &::before {
-                background: linear-gradient(
-                  transparent,
-                  rgba(255, 199, 53, 0.44)
-                );
+                background: linear-gradient(transparent, rgba($color-warning-500, .44));
               }
             }
 
@@ -95,10 +92,7 @@
               grid-column: 3 / 4;
 
               &::before {
-                background: linear-gradient(
-                  transparent,
-                  rgba(255, 53, 53, 0.48)
-                );
+                background: linear-gradient(transparent, rgba($color-red-500, .48));
               }
             }
 
@@ -139,7 +133,7 @@
             font-size: $fs-md;
             text-overflow: ellipsis;
             overflow: hidden;
-            color: #8d96bd;
+            color: $color-primary-500;
             margin-bottom: $base * 13;
 
             display: -webkit-box;

@@ -11,7 +11,7 @@
 }
 
 .logo {
-  background-color: #5e81fe;
+  background-color: $color-secondary-400;
   width: $base * 6;
   height: $base * 6;
   border-radius: 50%;
@@ -55,7 +55,7 @@
     transition: fill 0.2s linear;
 
     &:hover {
-      fill: #6188ff;
+      fill: $color-secondary-200;
     }
   }
 }

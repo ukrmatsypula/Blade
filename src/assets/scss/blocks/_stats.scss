@@ -35,7 +35,7 @@
 
   &__left {
     align-items: flex-end;
-    background-color: #6888ff;
+    background-color: $color-secondary-100;
     flex-basis: 50%;
     padding: $base * 16 $base * 22;
     text-align: right;
@@ -45,6 +45,6 @@
     background-color: #e9efff;
     flex-basis: 50%;
     padding: $base * 16 $base * 22;
-    color: #5e80ff;
+    color: $color-secondary-300;
   }
 }

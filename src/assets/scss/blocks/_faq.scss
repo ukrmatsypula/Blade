@@ -32,7 +32,7 @@
         display: flex;
         justify-content: center;
         padding: $base * 4;
-        stroke: #8e96b7;
+        stroke: $color-primary-400;
         transition: transform $transition linear, stroke $transition linear;
       }
     }

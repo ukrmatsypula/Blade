@@ -54,6 +54,7 @@ h5 {
   border-radius: $base / 2;
   color: #7a85ad;
   font-size: $fs-sm;
+  font-family: inherit;
 
   &--size-lg {
     padding: $base * 5 $base * 6;
