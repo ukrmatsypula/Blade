@@ -20,7 +20,7 @@
       @include roboto;
       font-size: $fs-md;
       line-height: 2;
-      color: $color-primary-500;
+      color: #646d96;
     }
   }
 
@@ -39,6 +39,15 @@
     &__btn {
       margin-left: $base * 3;
       border-radius: $base;
+    }
+
+    > input {
+      width: 100%;
+      font-family: inherit;
+      color: $color-secondary-500;
+      // background: #e2e2e2;
+      font-weight: $fw-bold;
+      color: $color-secondary-900;
     }
   }
 }
