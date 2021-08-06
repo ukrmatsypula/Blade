@@ -5,6 +5,12 @@
     text-align: center;
   }
 
+  .section-subtitle {
+    font-weight: $fw-medium;
+    font-size: $base * 6;
+    margin-bottom: $base * 20;
+  }
+
   .features-list {
     display: flex;
     justify-content: space-around;
@@ -51,6 +57,8 @@
       }
 
       &-title {
+        @include roboto;
+
         font-size: $fs-md;
         font-weight: $fw-bold;
         margin-bottom: $base * 7;

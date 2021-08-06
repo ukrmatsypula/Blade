@@ -10,6 +10,7 @@
     flex-basis: 35%;
 
     &-title {
+      text-transform: none;
       font-weight: $fw-bold;
       font-size: $fs-lg;
       color: $color-secondary-900;

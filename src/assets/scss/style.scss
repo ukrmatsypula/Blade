@@ -16,6 +16,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -23,28 +24,47 @@ h4,
 h5,
 h6 {
   color: #3d4f9f;
+  padding: 0;
+  margin: 0;
+  font-family: $fw-regular;
 }
+
 h2 {
-  font-size: 48px;
-  margin-bottom: $base * 7;
-}
-
-h3 {
-  font-size: 36px;
-  margin-bottom: $base * 7;
-}
-
-h4 {
-  font-size: 24px;
-  margin-bottom: $base * 20;
-}
-
-h5 {
   @include roboto;
   font-size: 10px;
   margin-bottom: $base * 4;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  color: $color-secondary-900;
+}
+
+// h3 {
+//   font-size: 36px;
+//   margin-bottom: $base * 7;
+// }
+
+// h4 {
+//   font-size: 24px;
+//   margin-bottom: $base * 20;
+// }
+
+// h5 {
+//   @include roboto;
+//   font-size: 10px;
+//   margin-bottom: $base * 4;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+// }
+
+.section-subtitle {
+  font-size: 48px;
+  margin-bottom: $base * 7;
+  color: $color-secondary-900;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .input {
@@ -70,6 +90,18 @@ h5 {
 
 .txt-center {
   text-align: center;
+}
+
+//for screen readers
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .or-block {

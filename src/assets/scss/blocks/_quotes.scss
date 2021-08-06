@@ -4,6 +4,10 @@
   .section-inner {
     display: flex;
     justify-content: space-between;
+
+    .section-subtitle {
+      font-size: $base * 9;
+    }
   }
 
   &__left,

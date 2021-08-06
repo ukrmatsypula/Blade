@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="">
+    <meta name="description" content="Landing Page">
     
     <title>Home | Home Page</title>
   </head>
@@ -286,7 +286,9 @@
       <header class="section-outer section-header">
         <div class="section-inner section-inner--wide">
           <div class="main-navigation">
-            <a class="logo" href="#"></a>
+            <h1 class="logo">
+              <a class="logo__link" href="#" aria-label="logo"></a>
+            </h1>
             <nav class="nav">
               <ul class="nav-wrapper">
                 <li class="nav-wrapper__item">
@@ -318,7 +320,11 @@
             <div class="socials">
               <ul class="socials-wrapper">
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a
+                    class="socials-wrapper__item-link"
+                    href="#"
+                    aria-label="facebook"
+                  >
                     <svg class="icon icon--facebook">
                       <use xlink:href="#facebook"></use>
                     </svg>
@@ -326,7 +332,11 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a
+                    class="socials-wrapper__item-link"
+                    href="#"
+                    aria-label="telegram"
+                  >
                     <svg class="icon icon--telegram">
                       <use xlink:href="#telegram"></use>
                     </svg>
@@ -334,7 +344,7 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a class="socials-wrapper__item-link" href="#" aria-label="twitter">
                     <svg class="icon icon--twitter">
                       <use xlink:href="#twitter"></use>
                     </svg>
@@ -342,7 +352,7 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a class="socials-wrapper__item-link" href="#" aria-label="medium">
                     <svg class="icon icon--medium">
                       <use xlink:href="#medium"></use>
                     </svg>
@@ -358,7 +368,7 @@
         </div>
       </header>
 
-      <div class="content">
+      <main class="main-content">
         
         
         <section class="section-outer section-hero-image">
@@ -368,14 +378,16 @@
               style="background-image: url(assets/images/uploads/hero-image-1.jpg)"
             >
               <div class="section-inner slider-hero-image__item-content">
-                <h5>PLAN YOUR LIFE</h5>
-                <h2>Increase your <span>productivity</span></h2>
+                <h2>PLAN YOUR LIFE</h2>
+                <div class="section-subtitle">
+                  Increase your <span>productivity</span>
+                </div>
                 <div class="text">
                   Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                   atqui laudem an, insolens gubergren similique est cu. Et vel modus
                   congue vituperata.
                 </div>
-                <button class="btn-wrapper-icon-play">
+                <button class="btn-wrapper-icon-play" aria-label="play">
                   <svg class="icon icon--play">
                     <use xlink:href="#play"></use>
                   </svg>
@@ -391,28 +403,29 @@
         </section>
         
         <section class="section-outer section-customers">
+          <h2 class="visually-hidden">Customers</h2>
           <div class="section-inner">
-            <a href="#">
+            <a href="#" aria-label="bitbacket">
               <svg>
                 <use xlink:href="#partner-bitbacket"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="#" aria-label="apple-watch">
               <svg>
                 <use xlink:href="#partner-apple-watch"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="#" aria-label="facebook">
               <svg>
                 <use xlink:href="#partner-facebook"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="#" aria-label="atlassian">
               <svg>
                 <use xlink:href="#partner-atlassian"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="#" aria-label="audi">
               <svg>
                 <use xlink:href="#partner-audi"></use>
               </svg>
@@ -424,8 +437,8 @@
           <div class="section-inner">
             <div class="section-plan-and-manage__content">
               <img class="aside-image" src="assets/images/plan-and-manage.png" alt="" />
-              <h5>DESKTOP AND MOBILE APP</h5>
-              <h3>Plan <span>and</span> manage</h3>
+              <h2>DESKTOP AND MOBILE APP</h2>
+              <div class="section-subtitle">Plan <span>and</span> manage</div>
               <div class="text">
                 Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
                 atqui laudem an, insolens gubergren similique est cu. Et vel modus
@@ -447,8 +460,8 @@
         
         <section class="section-outer section-features">
           <div class="section-inner">
-            <h5 class="txt-center">ABOUT US</h5>
-            <h4 class="txt-center">Read about our app</h4>
+            <h2 class="txt-center">ABOUT US</h2>
+            <div class="txt-center section-subtitle">Read about our app</div>
             <ul class="features-list">
               <li class="features-list__item">
                 <div class="features-list__item-icon">
@@ -456,7 +469,7 @@
                     <use xlink:href="#icon-home"></use>
                   </svg>
                 </div>
-                <div class="features-list__item-title">Overview</div>
+                <h3 class="features-list__item-title">Overview</h3>
                 <div class="features-list__item-text">
                   Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
                 </div>
@@ -468,7 +481,7 @@
                     <use xlink:href="#icon-folder"></use>
                   </svg>
                 </div>
-                <div class="features-list__item-title">Files</div>
+                <h3 class="features-list__item-title">Files</h3>
                 <div class="features-list__item-text">
                   No vim nulla vitae intellegat. Ei enim error ius, solet atomorum
                   conceptam ex has.
@@ -481,7 +494,7 @@
                     <use xlink:href="#icon-message"></use>
                   </svg>
                 </div>
-                <div class="features-list__item-title">Meeting chats</div>
+                <h3 class="features-list__item-title">Meeting chats</h3>
                 <div class="features-list__item-text">
                   Vim ne tacimates neglegentur. Erat diceret omittam at est.
                 </div>
@@ -493,7 +506,7 @@
                     <use xlink:href="#icon-up-arrow"></use>
                   </svg>
                 </div>
-                <div class="features-list__item-title">Save events</div>
+                <h3 class="features-list__item-title">Save events</h3>
                 <div class="features-list__item-text">
                   Nisl idque mel ea, nominati voluptatum.
                 </div>
@@ -509,6 +522,8 @@
         </section>
         
         <section class="section-outer section-stats">
+          <h2 class="visually-hidden">Statistic</h2>
+        
           <div class="section-stats__left">
             <div class="section-stats__icon">
               <svg class="icon icon-speed--big">
@@ -533,25 +548,25 @@
         
         <section class="section-outer section-blog">
           <div class="section-inner">
-            <h5 class="txt-center">OUR RESOURCES</h5>
-            <h4 class="txt-center">Start reading our blog</h4>
+            <h2 class="txt-center">OUR RESOURCES</h2>
+            <div class="txt-center section-subtitle">Start reading our blog</div>
         
             <ul class="slider-blog">
               <li class="slider-blog__item">
                 <div class="slider-blog__item-gallery">
-                  <a href="#" class="image-link image-link--b">
+                  <a href="#" class="image-link image-link--b" aria-label="image-1">
                     <svg class="icon icon--zoom">
                       <use xlink:href="#icon-zoom"></use>
                     </svg>
                     <img src="assets/images/blog/blog-1.png" alt="" />
                   </a>
-                  <a href="#" class="image-link image-link--s-1">
+                  <a href="#" class="image-link image-link--s-1" aria-label="image-2">
                     <svg class="icon icon--zoom">
                       <use xlink:href="#icon-zoom"></use>
                     </svg>
                     <img src="assets/images/blog/blog-2.png" alt="" />
                   </a>
-                  <a href="#" class="image-link image-link--s-2">
+                  <a href="#" class="image-link image-link--s-2" aria-label="image-3">
                     <svg class="icon icon--zoom">
                       <use xlink:href="#icon-zoom"></use>
                     </svg>
@@ -574,12 +589,12 @@
               </li>
             </ul>
         
-            <button class="btn-blog btn-blog--prev">
+            <button class="btn-blog btn-blog--prev" aria-label="previous slide">
               <svg class="icon blog-slider-arrow">
                 <use xlink:href="#icon-slider-arrow"></use>
               </svg>
             </button>
-            <button class="btn-blog btn-blog--next">
+            <button class="btn-blog btn-blog--next" aria-label="next slide">
               <svg class="icon blog-slider-arrow">
                 <use xlink:href="#icon-slider-arrow"></use>
               </svg>
@@ -596,8 +611,8 @@
         <section class="section-outer section-quotes">
           <div class="section-inner">
             <div class="section-quotes__left">
-              <h5>TESTIMONIALS</h5>
-              <h3>Customers's quotes</h3>
+              <h2>TESTIMONIALS</h2>
+              <div class="section-subtitle">Customers's quotes</div>
         
               <div class="text">
                 Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
@@ -626,19 +641,19 @@
         
         <section class="section-outer section-faq">
           <div class="section-inner">
-            <h5 class="txt-center">Customer help</h5>
-            <h4 class="txt-center">Frequently asked questions</h4>
+            <h2 class="txt-center">Customer help</h2>
+            <div class="txt-center section-subtitle">Frequently asked questions</div>
         
             <ul class="faq-accordion">
               <li class="faq-accordion__item">
-                <div class="faq-accordion__item-trigger">
+                <h3 class="faq-accordion__item-trigger">
                   <div class="faq-accordion__item-trigger-icon">
                     <svg class="icon icon-accordion-arrow">
                       <use xlink:href="#icon-accordion-arrow"></use>
                     </svg>
                   </div>
                   Reque insolens in vel?
-                </div>
+                </h3>
         
                 <div class="faq-accordion__item-content">
                   <div class="faq-accordion__item-content-text">
@@ -652,14 +667,14 @@
               </li>
         
               <li class="faq-accordion__item">
-                <div class="faq-accordion__item-trigger">
+                <h3 class="faq-accordion__item-trigger">
                   <div class="faq-accordion__item-trigger-icon">
                     <svg class="icon icon-accordion-arrow">
                       <use xlink:href="#icon-accordion-arrow"></use>
                     </svg>
                   </div>
                   Vis rebum error graecis ea, id sit postea accusamus?
-                </div>
+                </h3>
         
                 <div class="faq-accordion__item-content">
                   <div class="faq-accordion__item-content-text">
@@ -673,14 +688,14 @@
               </li>
         
               <li class="faq-accordion__item faq-accordion__item--active">
-                <div class="faq-accordion__item-trigger">
+                <h3 class="faq-accordion__item-trigger">
                   <div class="faq-accordion__item-trigger-icon">
                     <svg class="icon icon-accordion-arrow">
                       <use xlink:href="#icon-accordion-arrow"></use>
                     </svg>
                   </div>
                   Lorem repudiandae ne nec?
-                </div>
+                </h3>
         
                 <div class="faq-accordion__item-content">
                   <div class="faq-accordion__item-content-text">
@@ -694,14 +709,14 @@
               </li>
         
               <li class="faq-accordion__item">
-                <div class="faq-accordion__item-trigger">
+                <h3 class="faq-accordion__item-trigger">
                   <div class="faq-accordion__item-trigger-icon">
                     <svg class="icon icon-accordion-arrow">
                       <use xlink:href="#icon-accordion-arrow"></use>
                     </svg>
                   </div>
                   Ad dicit numquam vel. Et eos iudico feugait percipitur?
-                </div>
+                </h3>
         
                 <div class="faq-accordion__item-content">
                   <div class="faq-accordion__item-content-text">
@@ -715,14 +730,14 @@
               </li>
         
               <li class="faq-accordion__item">
-                <div class="faq-accordion__item-trigger">
+                <h3 class="faq-accordion__item-trigger">
                   <div class="faq-accordion__item-trigger-icon">
                     <svg class="icon icon-accordion-arrow">
                       <use xlink:href="#icon-accordion-arrow"></use>
                     </svg>
                   </div>
                   Sea no dico percipitur. Fierent constituam definitiones id eum?
-                </div>
+                </h3>
         
                 <div class="faq-accordion__item-content">
                   <div class="faq-accordion__item-content-text">
@@ -740,8 +755,10 @@
         
         <section class="section-outer section-get-started">
           <div class="section-inner">
-            <h5 class="txt-center">PLAN YOUR LIFE</h5>
-            <h2 class="txt-center"><span>Get</span> started <span>now</span></h2>
+            <h2 class="txt-center">PLAN YOUR LIFE</h2>
+            <div class="txt-center section-subtitle">
+              <span>Get</span> started <span>now</span>
+            </div>
         
             <div class="text">
               Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
@@ -759,7 +776,7 @@
         <section class="section-outer section-newsletter">
           <div class="section-inner">
             <div class="section-newsletter__left">
-              <div class="section-newsletter__left-title">Sign up for newsletter</div>
+              <h2 class="section-newsletter__left-title">Sign up for newsletter</h2>
               <div class="section-newsletter__left-text">
                 Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
                 alterum.
@@ -767,19 +784,29 @@
             </div>
             <div class="section-newsletter__right">
               <form class="form-newsletter">
-                <input class="input input--size-lg form-newsletter__input" type="text" placeholder="Email address" />
-                <button class="btn btn--size-lg btn--secondary form-newsletter__btn">Save me</button>
+                <label class="visually-hidden" for="email">Email:</label>
+                <input
+                  class="input input--size-lg"
+                  id="email form-newsletter__input"
+                  type="text"
+                  placeholder="Email address"
+                />
+                <button class="btn btn--size-lg btn--secondary form-newsletter__btn">
+                  Save me
+                </button>
               </form>
             </div>
           </div>
         </section>
         
-      </div>
+      </main>
 
       <footer class="section-outer section-footer">
         <div class="section-inner section-inner--wide">
           <div class="main-navigation">
-            <a class="logo" href="#"></a>
+            <div class="logo">
+              <a class="logo__link" href="#" aria-label="logo"></a>
+            </div>
             <nav class="nav">
               <ul class="nav-wrapper">
                 <li class="nav-wrapper__item">
@@ -811,7 +838,11 @@
             <div class="socials">
               <ul class="socials-wrapper">
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a
+                    class="socials-wrapper__item-link"
+                    href="#"
+                    aria-label="facebook"
+                  >
                     <svg class="icon icon--facebook">
                       <use xlink:href="#facebook"></use>
                     </svg>
@@ -819,7 +850,11 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a
+                    class="socials-wrapper__item-link"
+                    href="#"
+                    aria-label="telegram"
+                  >
                     <svg class="icon icon--telegram">
                       <use xlink:href="#telegram"></use>
                     </svg>
@@ -827,7 +862,7 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a class="socials-wrapper__item-link" href="#" aria-label="twitter">
                     <svg class="icon icon--twitter">
                       <use xlink:href="#twitter"></use>
                     </svg>
@@ -835,7 +870,7 @@
                 </li>
       
                 <li class="socials-wrapper__item">
-                  <a class="socials-wrapper__item-link" href="#">
+                  <a class="socials-wrapper__item-link" href="#" aria-label="medium">
                     <svg class="icon icon--medium">
                       <use xlink:href="#medium"></use>
                     </svg>

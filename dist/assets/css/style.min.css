@@ -395,26 +395,27 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3d4f9f; }
+  color: #3d4f9f;
+  padding: 0;
+  margin: 0;
+  font-family: 400; }
 
 h2 {
-  font-size: 48px;
-  margin-bottom: 28px; }
-
-h3 {
-  font-size: 36px;
-  margin-bottom: 28px; }
-
-h4 {
-  font-size: 24px;
-  margin-bottom: 80px; }
-
-h5 {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
   margin-bottom: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  color: #3d4f9f; }
+
+.section-subtitle {
+  font-size: 48px;
+  margin-bottom: 28px;
+  color: #3d4f9f; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .input {
   padding: 12px 16px;
@@ -434,6 +435,16 @@ h5 {
 
 .txt-center {
   text-align: center; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .or-block {
   display: inline-flex;
@@ -592,7 +603,8 @@ h5 {
   display: flex;
   align-items: center; }
 
-.logo {
+.logo__link {
+  display: block;
   background-color: #5e81fe;
   width: 24px;
   height: 24px;
@@ -646,9 +658,9 @@ h5 {
   background-position: center;
   text-align: center;
   background-repeat: no-repeat; }
-  .slider-hero-image__item-content h2 {
+  .slider-hero-image__item-content .section-subtitle {
     font-weight: 300; }
-    .slider-hero-image__item-content h2 span {
+    .slider-hero-image__item-content .section-subtitle span {
       font-weight: 500; }
   .slider-hero-image__item-content .text {
     font-family: "Roboto", sans-serif;
@@ -691,7 +703,7 @@ h5 {
       top: 0;
       left: 50%;
       z-index: 1; }
-    .section-plan-and-manage__content h3 span {
+    .section-plan-and-manage__content .section-subtitle span {
       font-weight: 300; }
     .section-plan-and-manage__content .text {
       font-family: "Roboto", sans-serif;
@@ -718,6 +730,10 @@ h5 {
   background: url(../../assets/images/features-clouds.svg) no-repeat center; }
   .section-features .btns {
     text-align: center; }
+  .section-features .section-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 80px; }
   .section-features .features-list {
     display: flex;
     justify-content: space-around;
@@ -754,6 +770,7 @@ h5 {
           z-index: 1;
           transform: translate(-50%, -50%); }
       .section-features .features-list__item-title {
+        font-family: "Roboto", sans-serif;
         font-size: 15px;
         font-weight: 700;
         margin-bottom: 28px;
@@ -807,6 +824,9 @@ h5 {
   position: relative; }
   .section-blog .section-inner .dots {
     justify-content: center; }
+  .section-blog .section-inner .section-subtitle {
+    font-size: 24px;
+    margin-bottom: 80px; }
   .section-blog .section-inner .slider-blog {
     border: 1px solid #d8e3fe;
     background-color: #fff;
@@ -885,6 +905,10 @@ h5 {
             opacity: 1; }
       .section-blog .section-inner .slider-blog__item-content {
         margin-left: 10%; }
+        .section-blog .section-inner .slider-blog__item-content .title {
+          font-size: 36px;
+          margin-bottom: 28px;
+          font-weight: 300; }
         .section-blog .section-inner .slider-blog__item-content .text {
           font-family: "Roboto", sans-serif;
           line-height: 2;
@@ -892,7 +916,7 @@ h5 {
           text-overflow: ellipsis;
           overflow: hidden;
           color: #8d96bd;
-          margin-bottom: 52px;
+          margin-bottom: 44px;
           display: -webkit-box;
           -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
@@ -930,6 +954,8 @@ h5 {
   .section-quotes .section-inner {
     display: flex;
     justify-content: space-between; }
+    .section-quotes .section-inner .section-subtitle {
+      font-size: 36px; }
   .section-quotes__left, .section-quotes__right {
     flex-basis: 45%; }
   .section-quotes__left .text {
@@ -962,6 +988,9 @@ h5 {
       height: 60px;
       border-radius: 100%;
       background: #333 url(../../assets/images/uploads/quote-photo.svg) no-repeat center; }
+
+.section-faq .section-subtitle {
+  font-size: 24px; }
 
 .faq-accordion__item {
   border-bottom: 1px solid #d8e3fe; }
@@ -1014,9 +1043,9 @@ h5 {
     z-index: -1;
     background-image: linear-gradient(#577afa, #5e80ff); }
   .section-get-started h2,
-  .section-get-started h5 {
+  .section-get-started .section-subtitle {
     color: #fff; }
-  .section-get-started h2 span {
+  .section-get-started .section-subtitle span {
     font-weight: 300; }
   .section-get-started .text {
     max-width: 80%;
@@ -1048,6 +1077,7 @@ h5 {
   .section-newsletter__left {
     flex-basis: 35%; }
     .section-newsletter__left-title {
+      text-transform: none;
       font-weight: 700;
       font-size: 18px;
       color: #3d4f9f;

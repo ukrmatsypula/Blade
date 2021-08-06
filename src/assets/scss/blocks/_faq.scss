@@ -1,3 +1,9 @@
+.section-faq {
+  .section-subtitle {
+    font-size: $base * 6;
+  }
+}
+
 .faq-accordion {
   &__item {
     $parent: &;

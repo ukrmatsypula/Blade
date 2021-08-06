@@ -11,10 +11,13 @@
 }
 
 .logo {
-  background-color: $color-secondary-400;
-  width: $base * 6;
-  height: $base * 6;
-  border-radius: 50%;
+  &__link {
+    display: block;
+    background-color: $color-secondary-400;
+    width: $base * 6;
+    height: $base * 6;
+    border-radius: 50%;
+  }
 }
 
 .nav {

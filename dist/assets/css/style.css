@@ -478,6 +478,7 @@ h5 {
     border-radius: 2px;
     color: #7a85ad;
     font-size: 12px;
+    font-family: inherit;
 }
 
 .input--size-lg {
@@ -560,7 +561,7 @@ h5 {
 }
 
 .section-outer {
-    border-bottom: 1px solid #d8e3fe;
+    border-bottom: 1px solid #d1d1e4;
 }
 
 .section-inner {
@@ -796,7 +797,6 @@ h5 {
 
 .section-hero-image {
     position: relative;
-    background-color: #f4f7ff;
 }
 
 .section-hero-image .dots {
@@ -1151,7 +1151,7 @@ h5 {
 }
 
 .section-blog .section-inner .slider-blog__item-gallery .image-link--s-1::before {
-    background: linear-gradient(transparent, rgba(255, 53, 53, 0.48));
+    background: linear-gradient(transparent, rgba(255, 69, 69, 0.48));
 }
 
 .section-blog .section-inner .slider-blog__item-gallery .image-link--s-2 {
