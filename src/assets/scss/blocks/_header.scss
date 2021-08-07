@@ -13,7 +13,7 @@
 .logo {
   &__link {
     display: block;
-    background-color: $color-secondary-400;
+    background-color: $color-blue-400;
     width: $base * 6;
     height: $base * 6;
     border-radius: 50%;
@@ -44,7 +44,7 @@
 
       &--active {
         font-weight: $fw-bold;
-        color: $color-secondary-500;
+        color: $color-blue-500;
       }
     }
   }
@@ -58,7 +58,7 @@
     transition: fill 0.2s linear;
 
     &:hover {
-      fill: $color-secondary-200;
+      fill: $color-blue-200;
     }
   }
 }
@@ -70,9 +70,6 @@
   &__item {
     & + & {
       margin-left: $base * 10;
-    }
-
-    &-link {
     }
   }
 }

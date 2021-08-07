@@ -13,7 +13,7 @@
       text-transform: none;
       font-weight: $fw-bold;
       font-size: $fs-lg;
-      color: $color-secondary-900;
+      color: $color-blue-900;
       margin-bottom: $base * 4;
     }
     &-text {
@@ -44,10 +44,10 @@
     > input {
       width: 100%;
       font-family: inherit;
-      color: $color-secondary-500;
+      color: $color-blue-500;
       // background: #e2e2e2;
       font-weight: $fw-bold;
-      color: $color-secondary-900;
+      color: $color-blue-900;
     }
   }
 }
