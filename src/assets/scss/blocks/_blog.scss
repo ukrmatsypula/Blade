@@ -147,7 +147,7 @@
           .text {
             @include roboto;
             line-height: 2;
-            font-size: $fs-md;
+            font-size: $fs-s;
             text-overflow: ellipsis;
             overflow: hidden;
             color: #61698a;

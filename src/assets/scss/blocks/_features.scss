@@ -59,7 +59,7 @@
       &-title {
         @include roboto;
 
-        font-size: $fs-md;
+        font-size: $fs-s;
         font-weight: $fw-bold;
         margin-bottom: $base * 7;
         color: $color-blue-800;
@@ -67,7 +67,7 @@
 
       &-text {
         @include quicksand;
-        font-size: $fs-sm;
+        font-size: $fs-sx;
         margin-bottom: $base * 6;
         line-height: 1.8;
         color: #adb3cb;

@@ -26,7 +26,7 @@
       }
       .text {
         @include roboto;
-        font-size: $fs-md;
+        font-size: $fs-s;
         max-width: 55%;
         line-height: 2;
         margin: 0 auto $base * 5;
