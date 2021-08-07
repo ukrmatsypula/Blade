@@ -412,11 +412,6 @@ h2 {
   margin-bottom: 28px;
   color: #3d4f9f; }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
 .input {
   padding: 12px 16px;
   border: 1px solid transparent;
@@ -900,7 +895,7 @@ img {
             .section-blog .section-inner .slider-blog__item-gallery .image-link--s-2::before {
               background: linear-gradient(transparent, rgba(53, 170, 255, 0.68)); }
           .section-blog .section-inner .slider-blog__item-gallery .image-link img {
-            box-shadow: 0 16px 100px #e5ebf8; }
+            box-shadow: 0 16px 100px #cad3e6; }
           .section-blog .section-inner .slider-blog__item-gallery .image-link:hover .icon--zoom {
             opacity: 1; }
           .section-blog .section-inner .slider-blog__item-gallery .image-link:hover::after {
