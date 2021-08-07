@@ -446,29 +446,29 @@ h4,
 h5,
 h6 {
     color: #3d4f9f;
+    padding: 0;
+    margin: 0;
+    font-family: 400;
 }
 
 h2 {
-    font-size: 48px;
-    margin-bottom: 28px;
-}
-
-h3 {
-    font-size: 36px;
-    margin-bottom: 28px;
-}
-
-h4 {
-    font-size: 24px;
-    margin-bottom: 80px;
-}
-
-h5 {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     margin-bottom: 16px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #3d4f9f;
+}
+
+.section-subtitle {
+    font-size: 48px;
+    margin-bottom: 28px;
+    color: #3d4f9f;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .input {
@@ -518,6 +518,17 @@ h5 {
 
 .txt-center {
     text-align: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .or-block {
@@ -648,6 +659,7 @@ h5 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     display: inline-block;
+    color: #456de2;
     padding: 12px 20px;
     margin: 0;
     background-color: none;
@@ -663,7 +675,7 @@ h5 {
 
 .btn--primary {
     background-color: #d2e1ff;
-    color: #3a79ff;
+    color: #3159ce;
 }
 
 .btn--primary:hover {
@@ -671,7 +683,7 @@ h5 {
 }
 
 .btn--secondary {
-    background-color: #4c85ff;
+    background-color: #456de2;
     color: #fff;
     font-weight: 700;
     border-radius: 2px 0 0 2px;
@@ -679,12 +691,12 @@ h5 {
 }
 
 .btn--secondary:hover {
-    background-color: #3374ff;
+    background-color: #2f5cdf;
 }
 
 .btn--without-bg {
     background-color: transparent;
-    color: #adb4d2;
+    color: #73757b;
     border: 1px solid #d1d1e4;
     border-radius: 0 2px 2px 0;
     font-weight: 500;
@@ -692,18 +704,18 @@ h5 {
 }
 
 .btn--without-bg:hover {
-    border-color: #b1b1d1;
-    color: #8c96c0;
+    border-color: #a1a1c8;
+    color: #2d3453;
 }
 
 .btn--danger {
     background-color: #ffd7d7;
-    color: #d43f3f;
+    color: #b53333;
 }
 
 .btn--danger:hover {
     background-color: #ffbebe;
-    color: #cc2e2e;
+    color: #a12d2d;
 }
 
 .btn--grayscale {
@@ -733,7 +745,8 @@ h5 {
     align-items: center;
 }
 
-.logo {
+.logo__link {
+    display: block;
     background-color: #5e81fe;
     width: 24px;
     height: 24px;
@@ -768,7 +781,7 @@ h5 {
 
 .nav-wrapper__item-link--active {
     font-weight: 700;
-    color: #6188ff;
+    color: #456de2;
 }
 
 .socials {
@@ -815,11 +828,11 @@ h5 {
     background-repeat: no-repeat;
 }
 
-.slider-hero-image__item-content h2 {
+.slider-hero-image__item-content .section-subtitle {
     font-weight: 300;
 }
 
-.slider-hero-image__item-content h2 span {
+.slider-hero-image__item-content .section-subtitle span {
     font-weight: 500;
 }
 
@@ -881,7 +894,7 @@ h5 {
     z-index: 1;
 }
 
-.section-plan-and-manage__content h3 span {
+.section-plan-and-manage__content .section-subtitle span {
     font-weight: 300;
 }
 
@@ -889,6 +902,7 @@ h5 {
     font-family: "Roboto", sans-serif;
     line-height: 2;
     margin-bottom: 48px;
+    color: #5f76a2;
 }
 
 .section-plan-and-manage__content .btns {
@@ -923,6 +937,12 @@ h5 {
 
 .section-features .btns {
     text-align: center;
+}
+
+.section-features .section-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 80px;
 }
 
 .section-features .features-list {
@@ -978,6 +998,7 @@ h5 {
 }
 
 .section-features .features-list__item-title {
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 28px;
@@ -1034,7 +1055,7 @@ h5 {
 .section-stats__left {
     -ms-flex-align: end;
     align-items: flex-end;
-    background-color: #6888ff;
+    background-color: #526fd8;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     padding: 64px 88px;
@@ -1047,7 +1068,7 @@ h5 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     padding: 64px 88px;
-    color: #5e80ff;
+    color: #4d65bf;
 }
 
 .section-blog {
@@ -1058,6 +1079,11 @@ h5 {
 .section-blog .section-inner .dots {
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.section-blog .section-inner .section-subtitle {
+    font-size: 24px;
+    margin-bottom: 80px;
 }
 
 .section-blog .section-inner .slider-blog {
@@ -1179,14 +1205,20 @@ h5 {
     margin-left: 10%;
 }
 
+.section-blog .section-inner .slider-blog__item-content .title {
+    font-size: 36px;
+    margin-bottom: 28px;
+    font-weight: 300;
+}
+
 .section-blog .section-inner .slider-blog__item-content .text {
     font-family: "Roboto", sans-serif;
     line-height: 2;
     font-size: 15px;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: #8d96bd;
-    margin-bottom: 52px;
+    color: #61698a;
+    margin-bottom: 44px;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -1245,6 +1277,10 @@ h5 {
     justify-content: space-between;
 }
 
+.section-quotes .section-inner .section-subtitle {
+    font-size: 36px;
+}
+
 .section-quotes__left, .section-quotes__right {
     -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
@@ -1290,6 +1326,10 @@ h5 {
     height: 60px;
     border-radius: 100%;
     background: #333 url(../../assets/images/uploads/quote-photo.svg) no-repeat center;
+}
+
+.section-faq .section-subtitle {
+    font-size: 24px;
 }
 
 .faq-accordion__item {
@@ -1349,6 +1389,7 @@ h5 {
     line-height: 2;
     padding-left: 64px;
     font-size: 15px;
+    color: #58748c;
 }
 
 .faq-accordion__item-content-btn {
@@ -1375,11 +1416,11 @@ h5 {
 }
 
 .section-get-started h2,
-  .section-get-started h5 {
+  .section-get-started .section-subtitle {
     color: #fff;
 }
 
-.section-get-started h2 span {
+.section-get-started .section-subtitle span {
     font-weight: 300;
 }
 
@@ -1435,6 +1476,7 @@ h5 {
 }
 
 .section-newsletter__left-title {
+    text-transform: none;
     font-weight: 700;
     font-size: 18px;
     color: #3d4f9f;
@@ -1445,7 +1487,7 @@ h5 {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 2;
-    color: #8d96bd;
+    color: #646d96;
 }
 
 .section-newsletter__right {
@@ -1470,6 +1512,14 @@ h5 {
     border-radius: 4px;
 }
 
+.section-newsletter .form-newsletter > input {
+    width: 100%;
+    font-family: inherit;
+    color: #456de2;
+    font-weight: 700;
+    color: #3d4f9f;
+}
+
 .section-footer {
     border-bottom: 0;
 }
@@ -1485,5 +1535,5 @@ h5 {
     font-size: 12px;
     letter-spacing: 5%;
     font-weight: 500;
-    color: #aeb8d0;
+    color: #676f95;
 }
