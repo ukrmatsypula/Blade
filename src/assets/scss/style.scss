@@ -43,6 +43,10 @@ h2 {
   color: $color-blue-900;
 }
 
+.page {
+  overflow: hidden;
+}
+
 
 .input {
   padding: $base * 3 $base * 4;
@@ -119,6 +123,7 @@ h2 {
 }
 
 .section-outer {
+  padding: 0 $base * 5;
   border-bottom: 1px solid $color-divider;
 }
 .section-inner {

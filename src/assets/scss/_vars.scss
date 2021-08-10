@@ -5,6 +5,22 @@ $fw-bold: 700;
 
 $base: 4px;
 
+// $breakpoint-xs-min: 0;
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+
 $fs-xxs: 10px;
 $fs-xs: 12px;
 $fs-s: 15px;
@@ -41,7 +57,6 @@ $color-gray-600: #7382a3;
 $color-gray-700: #7a85ad;
 $color-gray-800: #676f95;
 $color-gray-900: #495274;
-
 
 //secondary
 $color-blue-50: #a0b4ff;
