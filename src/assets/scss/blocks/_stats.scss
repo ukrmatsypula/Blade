@@ -24,8 +24,11 @@
   &__text {
     font-size: $fs-m;
     font-weight: $fw-medium;
-    max-width: 35%;
     line-height: 1.3;
+
+    @media (min-width: $breakpoint-lg-min) {
+      width: 35%;
+    }
   }
 
   &__left,

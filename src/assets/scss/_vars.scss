@@ -3,7 +3,7 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$base: 4px;
+$base: rem(4px);
 
 // $breakpoint-xs-min: 0;
 $breakpoint-sm-min: 576px;
@@ -21,13 +21,13 @@ $breakpoint-lg-max: $breakpoint-xl-min - 1px;
 $breakpoint-xxl-min: 1400px;
 $breakpoint-xl-max: $breakpoint-xxl-min - 1px;
 
-$fs-xxs: 10px;
-$fs-xs: 12px;
-$fs-s: 15px;
-$fs-m: 18px;
-$fs-l: 24px;
-$fs-xl: 36px;
-$fs-xxl: 48px;
+$fs-xxs: rem(10px);
+$fs-xs: rem(12px);
+$fs-s: rem(15px);
+$fs-m: rem(18px);
+$fs-l: rem(24px);
+$fs-xl: rem(36px);
+$fs-xxl: rem(48px);
 
 $padding-vertical-xs: $base * 5;
 $padding-vertical-sm: $base * 15;
