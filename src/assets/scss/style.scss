@@ -130,6 +130,40 @@ h2 {
   }
 }
 
+.vertical-indent {
+  &--s {
+    padding-top: $base * 5;
+    padding-bottom: $base * 5;
+  }
+
+  &--m {
+    padding-top: $base * 15;
+    padding-bottom: $base * 15;
+  }
+
+  &--l {
+    padding-top: $base * 30;
+    padding-bottom: $base * 30;
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    &--s {
+      padding-top: $base * 2;
+      padding-bottom: $base * 2;
+    }
+
+    &--m {
+      padding-top: $base * 7;
+      padding-bottom: $base * 7;
+    }
+
+    &--l {
+      padding-top: $base * 15;
+      padding-bottom: $base * 15;
+    }
+  }
+}
+
 .section-outer {
   padding: 0 $base * 5;
   border-bottom: 1px solid $color-divider;
@@ -137,8 +171,6 @@ h2 {
 .section-inner {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: $padding-vertical;
-  padding-bottom: $padding-vertical;
 
   &--wide {
     max-width: 1200px;
