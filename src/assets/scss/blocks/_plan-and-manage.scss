@@ -50,5 +50,13 @@
     @media (min-width: $breakpoint-lg-min) {
       width: 50%;
     }
+
+    @media (max-width: $breakpoint-xs-max) {
+      width: 70%;
+
+      .aside-image {
+        left: 42%;
+      }
+    }
   }
 }

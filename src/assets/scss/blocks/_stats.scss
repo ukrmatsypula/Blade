@@ -51,4 +51,11 @@
     padding: $base * 16 $base * 22;
     color: #4d65bf;
   }
+
+  @media (max-width: $breakpoint-xs-max) {
+    &__left,
+    &__right {
+      padding: $base * 8 $base * 10;
+    }
+  }
 }

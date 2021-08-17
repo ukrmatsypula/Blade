@@ -16,5 +16,17 @@
         }
       }
     }
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      a {
+        flex-basis: 45%;
+        text-align: center;
+        margin-top: $base * 3;
+        margin-bottom: $base * 3;
+      }
+    }
   }
 }

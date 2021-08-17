@@ -763,6 +763,15 @@ h2 {
     fill: #d6dae5; }
     .section-customers .section-inner a svg:hover {
       fill: #5982e7; }
+  @media (max-width: 575px) {
+    .section-customers .section-inner {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .section-customers .section-inner a {
+        flex-basis: 45%;
+        text-align: center;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem; } }
 
 .section-plan-and-manage {
   position: relative; }
@@ -799,6 +808,11 @@ h2 {
     @media (min-width: 992px) {
       .section-plan-and-manage__content {
         width: 50%; } }
+    @media (max-width: 575px) {
+      .section-plan-and-manage__content {
+        width: 70%; }
+        .section-plan-and-manage__content .aside-image {
+          left: 42%; } }
 
 .section-features {
   background: url(../../assets/images/features-clouds.svg) no-repeat center; }
@@ -813,9 +827,6 @@ h2 {
     justify-content: space-around;
     text-align: center;
     margin: 0 0 6.25rem; }
-    @media (max-width: 991px) {
-      .section-features .features-list {
-        margin-bottom: 3.75rem; } }
     .section-features .features-list__item {
       flex-basis: 16%;
       position: relative; }
@@ -859,6 +870,24 @@ h2 {
         margin-bottom: 1.5rem;
         line-height: 1.8;
         color: #adb3cb; }
+    @media (max-width: 991px) {
+      .section-features .features-list {
+        margin-bottom: 3.75rem; } }
+    @media (max-width: 575px) {
+      .section-features .features-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1.25rem; }
+        .section-features .features-list__item {
+          flex-basis: 45%;
+          position: relative;
+          margin-bottom: 2.5rem; }
+          .section-features .features-list__item:before {
+            display: none; }
+          .section-features .features-list__item-icon {
+            margin-bottom: 1rem; }
+          .section-features .features-list__item-title {
+            margin-bottom: 0.75rem; } }
 
 .section-stats {
   background: #e9efff;
@@ -898,6 +927,9 @@ h2 {
     flex-basis: 50%;
     padding: 4rem 5.5rem;
     color: #4d65bf; }
+  @media (max-width: 575px) {
+    .section-stats__left, .section-stats__right {
+      padding: 2rem 2.5rem; } }
 
 .section-blog {
   background-color: #f5f8ff;

@@ -17,10 +17,6 @@
     text-align: center;
     margin: 0 0 $base * 25;
 
-    @media (max-width: $breakpoint-md-max) {
-      margin-bottom: $base * 15;
-    }
-
     &__item {
       flex-basis: 16%;
       position: relative;
@@ -75,6 +71,33 @@
         margin-bottom: $base * 6;
         line-height: 1.8;
         color: #adb3cb;
+      }
+    }
+
+    @media (max-width: $breakpoint-md-max) {
+      margin-bottom: $base * 15;
+    }
+
+    @media (max-width: $breakpoint-xs-max) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: $base * 5;
+
+      &__item {
+        flex-basis: 45%;
+        position: relative;
+        margin-bottom: $base * 10;
+
+        &:before {
+          display: none;
+        }
+
+        &-icon {
+          margin-bottom: $base * 4;
+        }
+        &-title {
+          margin-bottom: $base * 3;
+        }
       }
     }
   }
