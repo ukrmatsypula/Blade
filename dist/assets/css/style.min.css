@@ -484,15 +484,12 @@ h2 {
   padding-bottom: 7.5rem; }
 
 @media (max-width: 991px) {
-  .vertical-indent--s {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
   .vertical-indent--m {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem; }
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
   .vertical-indent--l {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem; } }
+    padding-top: 5rem;
+    padding-bottom: 5rem; } }
 
 .section-outer {
   padding: 0 1.25rem;
@@ -816,6 +813,9 @@ h2 {
     justify-content: space-around;
     text-align: center;
     margin: 0 0 6.25rem; }
+    @media (max-width: 991px) {
+      .section-features .features-list {
+        margin-bottom: 3.75rem; } }
     .section-features .features-list__item {
       flex-basis: 16%;
       position: relative; }
@@ -910,6 +910,9 @@ h2 {
   .section-blog .section-inner .slider-wrapper {
     position: relative;
     margin-bottom: 6.25rem; }
+    @media (max-width: 991px) {
+      .section-blog .section-inner .slider-wrapper {
+        margin-bottom: 3.75rem; } }
   .section-blog .section-inner .slider-blog {
     border: 1px solid #d8e3fe;
     background-color: #fff;
