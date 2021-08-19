@@ -36,7 +36,6 @@
           grid-template-columns: repeat(3, $base * 30);
           grid-template-rows: repeat(2, $base * 30);
           gap: $base * 3;
-          // flex-basis: 45%;
 
           @media (max-width: $breakpoint-md-max) {
             grid-template-columns: repeat(3, $base * 25);
@@ -175,6 +174,22 @@
               font-weight: $fw-bold;
               background: transparent;
               border: none;
+            }
+          }
+        }
+
+        @media (max-width: $breakpoint-xs-max) {
+          flex-direction: column;
+          padding: $base * 6;
+
+          &-content {
+            position: relative;
+            z-index: 5;
+            margin-left: 0;
+            margin-top: $base * 6;
+
+            h3 {
+              margin-bottom: $base * 3;
             }
           }
         }
