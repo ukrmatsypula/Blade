@@ -6,3 +6,8 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
+
+@mixin vertical-indent($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}

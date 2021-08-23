@@ -491,6 +491,14 @@ h2 {
     padding-top: 5rem;
     padding-bottom: 5rem; } }
 
+@media (max-width: 575px) {
+  .vertical-indent--m {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+  .vertical-indent--l {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; } }
+
 .section-outer {
   padding: 0 1.25rem;
   border-bottom: 1px solid #d1d1e4; }

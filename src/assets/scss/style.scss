@@ -19,7 +19,6 @@
   // @media (max-width: $breakpoint-sm-max) {
   //   font-size: 10px;
   // }
-
 }
 
 *,
@@ -134,30 +133,34 @@ h2 {
 
 .vertical-indent {
   &--s {
-    padding-top: $base * 5;
-    padding-bottom: $base * 5;
+    @include vertical-indent($base * 5);
   }
 
   &--m {
-    padding-top: $base * 15;
-    padding-bottom: $base * 15;
+    @include vertical-indent($base * 15);
   }
 
   &--l {
-    padding-top: $base * 30;
-    padding-bottom: $base * 30;
+    @include vertical-indent($base * 30);
   }
 
   @media (max-width: $breakpoint-md-max) {
-
     &--m {
-      padding-top: $base * 10;
-      padding-bottom: $base * 10;
+      @include vertical-indent($base * 10);
     }
 
     &--l {
-      padding-top: $base * 20;
-      padding-bottom: $base * 20;
+      @include vertical-indent($base * 20);
+    }
+  }
+
+  @media (max-width: $breakpoint-xs-max) {
+    &--m {
+      @include vertical-indent($base * 5);
+    }
+
+    &--l {
+      @include vertical-indent($base * 10);
     }
   }
 }
