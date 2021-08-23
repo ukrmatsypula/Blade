@@ -28,9 +28,12 @@
   }
 
   .text {
-    max-width: 80%;
     line-height: 2;
     margin: 0 auto $base * 15;
+
+    @media (min-width: $breakpoint-sm-min) {
+      max-width: 80%;
+    }
   }
 
   .btns {

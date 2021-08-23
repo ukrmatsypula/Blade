@@ -1093,10 +1093,16 @@ h2 {
     justify-content: space-between; }
     .section-quotes .section-inner .section-subtitle {
       font-size: 2.25rem; }
+    @media (max-width: 575px) {
+      .section-quotes .section-inner {
+        flex-direction: column; } }
   .section-quotes__left, .section-quotes__right {
     flex-basis: 45%; }
   .section-quotes__left .text {
     line-height: 2; }
+  @media (max-width: 575px) {
+    .section-quotes__left {
+      margin-bottom: 2.5rem; } }
   .section-quotes__right .dots {
     justify-content: center; }
   .section-quotes .slider-quotes__item {
@@ -1164,6 +1170,11 @@ h2 {
       color: #58748c; }
     .faq-accordion__item-content-btn {
       margin-left: 3.75rem; }
+    @media (max-width: 575px) {
+      .faq-accordion__item-content {
+        flex-direction: column; }
+        .faq-accordion__item-content-text {
+          margin-bottom: 0.5rem; } }
 
 .section-get-started {
   background: url(../../assets/images/faq-bg.svg) no-repeat center;
@@ -1186,9 +1197,11 @@ h2 {
   .section-get-started .section-subtitle span {
     font-weight: 300; }
   .section-get-started .text {
-    max-width: 80%;
     line-height: 2;
     margin: 0 auto 3.75rem; }
+    @media (min-width: 576px) {
+      .section-get-started .text {
+        max-width: 80%; } }
   .section-get-started .btns {
     display: flex;
     justify-content: center; }

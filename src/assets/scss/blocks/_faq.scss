@@ -58,6 +58,14 @@
       &-btn {
         margin-left: $base * 15;
       }
+
+      @media (max-width: $breakpoint-xs-max) {
+        flex-direction: column;
+
+        &-text {
+          margin-bottom: $base * 2;
+        }
+      }
     }
   }
 }
