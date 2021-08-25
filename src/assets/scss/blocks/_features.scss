@@ -3,6 +3,10 @@
 
   .btns {
     text-align: center;
+
+    @media (max-width: $breakpoint-sm-max) {
+      display: flex;
+    }
   }
 
   .section-subtitle {
