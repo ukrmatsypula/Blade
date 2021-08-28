@@ -76,5 +76,10 @@
 
   &--size-lg {
     padding: $base * 5 $base * 16;
+
+    @media (max-width: $breakpoint-xs-max) {
+      padding-left: $base * 5;
+      padding-right: $base * 5;
+    }
   }
 }

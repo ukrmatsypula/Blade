@@ -620,6 +620,10 @@ h2 {
       color: #647498; }
   .btn--size-lg {
     padding: 1.25rem 4rem; }
+    @media (max-width: 575px) {
+      .btn--size-lg {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; } }
 
 .section-header {
   position: relative; }
@@ -634,6 +638,7 @@ h2 {
     align-items: center; }
     @media (max-width: 991px) {
       .section-header .main-navigation__inner-wrap {
+        display: none;
         position: absolute;
         top: 100%;
         right: 0;
