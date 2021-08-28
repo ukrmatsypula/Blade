@@ -634,7 +634,6 @@ h2 {
     align-items: center; }
     @media (max-width: 991px) {
       .section-header .main-navigation__inner-wrap {
-        display: none;
         position: absolute;
         top: 100%;
         right: 0;
@@ -696,6 +695,9 @@ h2 {
   display: flex; }
   .nav-wrapper__item + .nav-wrapper__item {
     margin-left: 2.5rem; }
+    @media (max-width: 575px) {
+      .nav-wrapper__item + .nav-wrapper__item {
+        margin: 0; } }
   .nav-wrapper__item-link {
     font-size: 0.75rem;
     color: #495274;
@@ -708,6 +710,10 @@ h2 {
     .nav-wrapper__item-link--active {
       font-weight: 700;
       color: #456de2; }
+  @media (max-width: 575px) {
+    .nav-wrapper {
+      flex-direction: column;
+      align-items: center; } }
 
 .socials {
   margin-left: auto; }
