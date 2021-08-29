@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.querySelector(\".faq-accordion\").addEventListener(\"click\", (event) => {\r\n  if (event.target.closest(\".faq-accordion__item\")) {\r\n    event.target\r\n      .closest(\".faq-accordion__item\")\r\n      .classList.toggle(\"faq-accordion__item--active\");\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/accordion.js?");
+eval("document.querySelector(\".faq-accordion\").addEventListener(\"click\", (event) => {\r\n  if (\r\n    event.target.closest(\".faq-accordion__item\") &&\r\n    event.target.className !== \"faq-accordion__item-content-text\"\r\n  ) {\r\n    event.target\r\n      .closest(\".faq-accordion__item\")\r\n      .classList.toggle(\"faq-accordion__item--active\");\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/accordion.js?");
 
 /***/ })
 
