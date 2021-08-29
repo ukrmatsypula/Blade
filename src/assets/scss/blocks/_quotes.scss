@@ -9,7 +9,7 @@
       font-size: $base * 9;
     }
 
-    @media (max-width: $breakpoint-xs-max) {
+    @media (max-width: $breakpoint-sm-max) {
       flex-direction: column;
     }
   }
@@ -24,7 +24,7 @@
       line-height: 2;
     }
 
-    @media (max-width: $breakpoint-xs-max) {
+    @media (max-width: $breakpoint-sm-max) {
       margin-bottom: $base * 10;
     }
   }

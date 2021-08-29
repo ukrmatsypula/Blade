@@ -180,8 +180,9 @@ h2 {
 
 // Blocks
 @import "_icons.scss";
-@import "blocks/_buttons.scss";
+@import "_buttons.scss";
 @import "blocks/_header.scss";
+@import "blocks/_navigation.scss";
 @import "blocks/_hero-image.scss";
 @import "blocks/_customers.scss";
 @import "blocks/_plan-and-manage";

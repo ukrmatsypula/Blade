@@ -1,0 +1,51 @@
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+  &__inner-wrap {
+    display: flex;
+    flex-grow: 1;
+    margin-left: $base * 18;
+    align-items: center;
+
+    .section-header & {
+      @media (max-width: $breakpoint-md-max) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        background: $color-white;
+        margin-left: 0;
+        padding: $base * 5;
+      }
+    }
+
+    @media (max-width: $breakpoint-md-max) {
+      flex-direction: column;
+      justify-content: center;
+
+      .socials,
+      .nav {
+        margin-bottom: $base * 5;
+      }
+
+      &,
+      .socials,
+      .btn-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    .section-footer & {
+      flex-direction: column;
+
+      .logo {
+        margin-bottom: $base * 5;
+      }
+    }
+  }
+}
