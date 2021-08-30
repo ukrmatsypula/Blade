@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/assets/js/accordion.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,6 +94,28 @@
 /***/ (function(module, exports) {
 
 eval("document.querySelector(\".faq-accordion\").addEventListener(\"click\", (event) => {\r\n  if (\r\n    event.target.closest(\".faq-accordion__item\") &&\r\n    event.target.className !== \"faq-accordion__item-content-text\"\r\n  ) {\r\n    event.target\r\n      .closest(\".faq-accordion__item\")\r\n      .classList.toggle(\"faq-accordion__item--active\");\r\n  }\r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/accordion.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/burgerMenu.js":
+/*!*************************************!*\
+  !*** ./src/assets/js/burgerMenu.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// for burger menu and disable scroll\nconst header = document.querySelector(\".section-header\");\n\ndocument.querySelector(\".btn-burger\").addEventListener(\"click\", (event) => {\n  header.classList.toggle(\"section-header--active-nav\");\n\n  document.body.classList.toggle(\"no-scroll\");\n});\n\n// hide menu and disable class no-scroll when customer resizing our site\nwindow.addEventListener(\"resize\", () => {\n  hideMenuAndEnableScroll();\n});\n\nconst hideMenuAndEnableScroll = () => {\n  const activeHeader = document.querySelector(\".section-header--active-nav\");\n\n  if (document.body.classList.contains(\"no-scroll\") && activeHeader) {\n    document.body.classList.remove(\"no-scroll\");\n    activeHeader.classList.remove(\"section-header--active-nav\");\n  }\n};\n\n\n//# sourceURL=webpack:///./src/assets/js/burgerMenu.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************!*\
+  !*** multi ./src/assets/js/accordion.js ./src/assets/js/burgerMenu.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/burgerMenu.js?");
 
 /***/ })
 

@@ -1,10 +1,32 @@
-.section-header {
+.section-outer.section-header {
   width: 100%;
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
   z-index: 10;
   background-color: $color-white;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &--active-nav {
+    &::before {
+      display: block;
+    }
+
+    .main-navigation__inner-wrap {
+      display: flex;
+    }
+  }
 }
 
 .btn-burger {
