@@ -462,6 +462,7 @@ h2 {
 }
 
 .page {
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -512,6 +513,10 @@ h2 {
 
 .txt-center {
     text-align: center;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .visually-hidden {
@@ -772,8 +777,34 @@ h2 {
     }
 }
 
-.section-header {
-    position: relative;
+.section-outer.section-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.section-outer.section-header::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-outer.section-header--active-nav::before {
+    display: block;
+}
+
+.section-outer.section-header--active-nav .main-navigation__inner-wrap {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .btn-burger {

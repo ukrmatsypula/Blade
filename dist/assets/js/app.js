@@ -108,14 +108,25 @@ eval("// for burger menu and disable scroll\nconst header = document.querySelect
 
 /***/ }),
 
+/***/ "./src/assets/js/hero-swiper.js":
+/*!**************************************!*\
+  !*** ./src/assets/js/hero-swiper.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const swiper = new Swiper(\".section-hero-image\", {\n  // Optional parameters\n  direction: \"vertical\",\n  loop: true,\n\n  // If we need pagination\n  // pagination: {\n  //   el: \".swiper-pagination\",\n  // },\n\n  // // Navigation arrows\n  // navigation: {\n  //   nextEl: \".swiper-button-next\",\n  //   prevEl: \".swiper-button-prev\",\n  // },\n\n  // // And if we need scrollbar\n  // scrollbar: {\n  //   el: \".swiper-scrollbar\",\n  // },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/hero-swiper.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!************************************************************************!*\
-  !*** multi ./src/assets/js/accordion.js ./src/assets/js/burgerMenu.js ***!
-  \************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** multi ./src/assets/js/accordion.js ./src/assets/js/burgerMenu.js ./src/assets/js/hero-swiper.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/burgerMenu.js?");
+eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/burgerMenu.js_./src/assets/js/hero-swiper.js?");
 
 /***/ })
 
