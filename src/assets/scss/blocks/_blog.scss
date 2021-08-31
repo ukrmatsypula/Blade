@@ -5,6 +5,7 @@
   .section-inner {
     .dots {
       justify-content: center;
+      bottom: unset;
     }
 
     .section-subtitle {
@@ -30,6 +31,7 @@
       &__item {
         display: flex;
         padding: $base * 16 $base * 8;
+        background: $color-white;
 
         &-gallery {
           display: grid;
@@ -254,18 +256,23 @@
       left: 100%;
       margin-left: $base * 16;
     }
+  }
 
+  .blog-slider-arrow {
+    stroke: #a8b4e5;
+    width: $base * 6;
+    height: $base * 4;
+  }
+
+  &:hover {
     .blog-slider-arrow {
-      stroke: #a8b4e5;
-      width: $base * 6;
-      height: $base * 4;
+      stroke: darken(#a8b4e5, 10%);
     }
+  }
 
-    &:hover {
-      .blog-slider-arrow {
-        stroke: darken(#a8b4e5, 10%);
-      }
-    }
+  .slider-blog-arrows {
+    position: relative;
+    bottom: 300px;
 
     @media (max-width: $breakpoint-lg-max) {
       display: none;

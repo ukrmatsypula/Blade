@@ -97,6 +97,17 @@ eval("document.querySelector(\".faq-accordion\").addEventListener(\"click\", (ev
 
 /***/ }),
 
+/***/ "./src/assets/js/blog-swiper.js":
+/*!**************************************!*\
+  !*** ./src/assets/js/blog-swiper.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const swiper = new Swiper(\".slider-blog-container\", {\n  spaceBetween: 30,\n  loop: true,\n  pagination: {\n    el: \".section-blog .dots\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n  navigation: {\n    nextEl: \".btn-blog--next\",\n    prevEl: \".btn-blog--prev\",\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/blog-swiper.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/burgerMenu.js":
 /*!*************************************!*\
   !*** ./src/assets/js/burgerMenu.js ***!
@@ -115,18 +126,18 @@ eval("// for burger menu and disable scroll\nconst header = document.querySelect
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const swiper = new Swiper(\".section-hero-image\", {\n  spaceBetween: 30,\n  pagination: {\n    el: \".swiper-pagination\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/hero-swiper.js?");
+eval("const swiper = new Swiper(\".section-hero-image\", {\n  spaceBetween: 30,\n  loop: true,\n  pagination: {\n    el: \".swiper-pagination.dots\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/hero-swiper.js?");
 
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************!*\
-  !*** multi ./src/assets/js/accordion.js ./src/assets/js/burgerMenu.js ./src/assets/js/hero-swiper.js ***!
-  \*******************************************************************************************************/
+/*!**************************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/accordion.js ./src/assets/js/blog-swiper.js ./src/assets/js/burgerMenu.js ./src/assets/js/hero-swiper.js ***!
+  \**************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/burgerMenu.js_./src/assets/js/hero-swiper.js?");
+eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/blog-swiper.js */\"./src/assets/js/blog-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/blog-swiper.js_./src/assets/js/burgerMenu.js_./src/assets/js/hero-swiper.js?");
 
 /***/ })
 
