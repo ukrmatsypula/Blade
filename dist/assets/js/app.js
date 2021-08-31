@@ -115,7 +115,7 @@ eval("// for burger menu and disable scroll\nconst header = document.querySelect
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const swiper = new Swiper(\".section-hero-image\", {\n  // Optional parameters\n  direction: \"vertical\",\n  loop: true,\n\n  // If we need pagination\n  // pagination: {\n  //   el: \".swiper-pagination\",\n  // },\n\n  // // Navigation arrows\n  // navigation: {\n  //   nextEl: \".swiper-button-next\",\n  //   prevEl: \".swiper-button-prev\",\n  // },\n\n  // // And if we need scrollbar\n  // scrollbar: {\n  //   el: \".swiper-scrollbar\",\n  // },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/hero-swiper.js?");
+eval("const swiper = new Swiper(\".section-hero-image\", {\n  spaceBetween: 30,\n  pagination: {\n    el: \".swiper-pagination\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/hero-swiper.js?");
 
 /***/ }),
 

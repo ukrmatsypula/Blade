@@ -120,7 +120,7 @@ h2 {
 .dots {
   display: flex;
 
-  &__item {
+  .swiper-pagination-bullets {
     border-radius: 50%;
     width: $base * 2;
     height: $base * 2;
@@ -128,9 +128,16 @@ h2 {
     transition: background-color 0.2s linear;
     cursor: pointer;
 
-    &--active {
+    .swiper-pagination-bullet {
+      display: block;
+      width: $base * 8;
+      height: $base * 8;
+    }
+
+    &-active {
       background-color: #5283ff;
     }
+
     & + & {
       margin-left: $base * 3;
     }

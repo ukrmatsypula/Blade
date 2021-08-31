@@ -2,11 +2,12 @@
   padding: 0;
   position: relative;
 
-  .dots {
+  .dots.swiper-pagination {
     position: absolute;
     bottom: $base * 7;
     left: 50%;
     transform: translateX(-50%);
+    width: auto;
   }
 }
 .slider-hero-image {
