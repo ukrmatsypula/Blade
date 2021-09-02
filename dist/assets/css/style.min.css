@@ -635,7 +635,7 @@ h2 {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   background-color: #fff; }
   .section-outer.section-header::before {
     content: "";
@@ -1169,21 +1169,30 @@ h2 {
       .section-quotes .section-inner {
         flex-direction: column; } }
   .section-quotes__left, .section-quotes__right {
-    flex-basis: 45%; }
+    min-width: 45%;
+    position: relative; }
   .section-quotes__left .text {
     line-height: 2; }
   @media (max-width: 767px) {
     .section-quotes__left {
       margin-bottom: 2.5rem; } }
-  .section-quotes__right .dots {
-    justify-content: center; }
+  .section-quotes__right {
+    min-width: 100%; }
+    .section-quotes__right .dots.swiper-pagination {
+      justify-content: center;
+      transform: translateX(-27%); }
+      @media (max-width: 767px) {
+        .section-quotes__right .dots.swiper-pagination {
+          transform: translateX(0); } }
   .section-quotes .slider-quotes__item {
     border: 1px solid #d8e3fe;
     background: #fff;
     padding: 2.5rem 2.5rem 4.25rem;
     position: relative;
     margin-bottom: 4.75rem;
-    box-shadow: 0 0.25rem 3rem #f3f5fa; }
+    box-shadow: 0 0.25rem 3rem #f3f5fa;
+    opacity: 0.5;
+    transition: opacity 0.5s linear; }
     .section-quotes .slider-quotes__item-text {
       line-height: 2;
       display: -webkit-box;
@@ -1203,6 +1212,10 @@ h2 {
       height: 3.75rem;
       border-radius: 100%;
       background: #333 url(../../assets/images/uploads/quote-photo.svg) no-repeat center; }
+    .section-quotes .slider-quotes__item.swiper-slide {
+      width: 100%; }
+      .section-quotes .slider-quotes__item.swiper-slide-active {
+        opacity: 1; }
 
 .section-faq .section-subtitle {
   font-size: 1.5rem; }

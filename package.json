@@ -33,5 +33,7 @@
         "> 1%",
         "IE 10"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "fslightbox": "^3.3.0-2"
+    }
 }

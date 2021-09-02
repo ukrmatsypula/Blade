@@ -130,14 +130,25 @@ eval("const swiper = new Swiper(\".section-hero-image\", {\n  spaceBetween: 30,\
 
 /***/ }),
 
+/***/ "./src/assets/js/quotes-slider.js":
+/*!****************************************!*\
+  !*** ./src/assets/js/quotes-slider.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const swiper = new Swiper(\".slider-quotes-container\", {\n  spaceBetween: 30,\n  slidesPerView: 1,\n  loop: true,\n\n  pagination: {\n    el: \".slider-quotes-container + .dots\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n\n  breakpoints: {\n    // // when window width is >= 320px\n    // 320: {\n    //   slidesPerView: 2,\n    //   spaceBetween: 20\n    // },\n    // // when window width is >= 480px\n    // 480: {\n    //   slidesPerView: 3,\n    //   spaceBetween: 30\n    // },\n    // // when window width is >= 640px\n    768: {\n      slidesPerView: 2,\n      spaceBetween: 80,\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/quotes-slider.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!**************************************************************************************************************************************!*\
-  !*** multi ./src/assets/js/accordion.js ./src/assets/js/blog-swiper.js ./src/assets/js/burgerMenu.js ./src/assets/js/hero-swiper.js ***!
-  \**************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/accordion.js ./src/assets/js/blog-swiper.js ./src/assets/js/burgerMenu.js ./src/assets/js/hero-swiper.js ./src/assets/js/quotes-slider.js ***!
+  \***********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/blog-swiper.js */\"./src/assets/js/blog-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/blog-swiper.js_./src/assets/js/burgerMenu.js_./src/assets/js/hero-swiper.js?");
+eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/blog-swiper.js */\"./src/assets/js/blog-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/quotes-slider.js */\"./src/assets/js/quotes-slider.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/blog-swiper.js_./src/assets/js/burgerMenu.js_./src/assets/js/hero-swiper.js_./src/assets/js/quotes-slider.js?");
 
 /***/ })
 
