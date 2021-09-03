@@ -148,7 +148,7 @@ eval("const swiper = new Swiper(\".section-hero-image\", {\n  spaceBetween: 30,\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const swiper = new Swiper(\".slider-quotes-container\", {\n  spaceBetween: 30,\n  slidesPerView: 1,\n  loop: true,\n\n  pagination: {\n    el: \".slider-quotes-container + .dots\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n\n  breakpoints: {\n    // // when window width is >= 320px\n    // 320: {\n    //   slidesPerView: 2,\n    //   spaceBetween: 20\n    // },\n    // // when window width is >= 480px\n    // 480: {\n    //   slidesPerView: 3,\n    //   spaceBetween: 30\n    // },\n    // // when window width is >= 640px\n    768: {\n      slidesPerView: 2,\n      spaceBetween: 80,\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/quotes-slider.js?");
+eval("const swiper = new Swiper(\".slider-quotes-container\", {\n  spaceBetween: 30,\n  slidesPerView: 1,\n  loop: true,\n\n  pagination: {\n    el: \".slider-quotes-container + .dots\",\n    clickable: true,\n    renderBullet: function (index, className) {\n      return `<li class=\"${className}\"></li>`;\n    },\n  },\n\n  breakpoints: {\n    768: {\n      slidesPerView: 2,\n      spaceBetween: 80,\n    },\n  },\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/quotes-slider.js?");
 
 /***/ }),
 
