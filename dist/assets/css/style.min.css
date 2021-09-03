@@ -1185,14 +1185,13 @@ h2 {
         .section-quotes__right .dots.swiper-pagination {
           transform: translateX(0); } }
   .section-quotes .slider-quotes__item {
-    border: 1px solid #d8e3fe;
-    background: #fff;
+    border: 1px solid #eff2f8;
+    background: #faffeb;
     padding: 2.5rem 2.5rem 4.25rem;
     position: relative;
     margin-bottom: 4.75rem;
     box-shadow: 0 0.25rem 3rem #f3f5fa;
-    opacity: 0.5;
-    transition: opacity 0.5s linear; }
+    transition: background-color 0.5s linear; }
     .section-quotes .slider-quotes__item-text {
       line-height: 2;
       display: -webkit-box;
@@ -1215,7 +1214,7 @@ h2 {
     .section-quotes .slider-quotes__item.swiper-slide {
       width: 100%; }
       .section-quotes .slider-quotes__item.swiper-slide-active {
-        opacity: 1; }
+        background: #fff; }
 
 .section-faq .section-subtitle {
   font-size: 1.5rem; }
