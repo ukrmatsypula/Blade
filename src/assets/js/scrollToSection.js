@@ -19,9 +19,11 @@ function clickHandler(currentSection) {
   const section = document.querySelector(`#${currentSection}`);
   const sectionScrollTopPosition = section.offsetTop;
   const isMenuExpanded = document.querySelector(".section-header--active-nav");
+  const isBodyNoScroll = document.querySelector(".no-scroll");
 
-  if (isMenuExpanded) {
+  if (isMenuExpanded && isBodyNoScroll) {
     isMenuExpanded.classList.remove("section-header--active-nav");
+    isBodyNoScroll.classList.remove("no-scroll");
   }
 
   scroll({
