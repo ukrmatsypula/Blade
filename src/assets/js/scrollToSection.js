@@ -6,6 +6,13 @@ if (links) {
   links.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault();
+
+      links.forEach((item) => {
+        item.classList.remove("nav-wrapper__item-link--active");
+      });
+
+      item.classList.add("nav-wrapper__item-link--active");
+
       const isSectionNames = item.dataset["scroll"];
 
       if (isSectionNames) {
