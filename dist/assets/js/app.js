@@ -152,14 +152,25 @@ eval("const swiper = new Swiper(\".slider-quotes-container\", {\n  spaceBetween:
 
 /***/ }),
 
+/***/ "./src/assets/js/scrollToSection.js":
+/*!******************************************!*\
+  !*** ./src/assets/js/scrollToSection.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const links = document.querySelectorAll(\"a[data-scroll]\");\nconst header = document.querySelector(\"header\");\nconst headerHeight = header.offsetHeight;\n\nif (links) {\n  links.forEach((item) => {\n    item.addEventListener(\"click\", (e) => {\n      e.preventDefault();\n      const isSectionNames = item.dataset[\"scroll\"];\n\n      if (isSectionNames) {\n        clickHandler(isSectionNames);\n      }\n    });\n  });\n}\n\nfunction clickHandler(currentSection) {\n  const section = document.querySelector(`#${currentSection}`);\n  const sectionScrollTopPosition = section.offsetTop;\n  const isMenuExpanded = document.querySelector(\".section-header--active-nav\");\n\n  if (isMenuExpanded) {\n    isMenuExpanded.classList.remove(\"section-header--active-nav\");\n  }\n\n  scroll({\n    top: sectionScrollTopPosition - headerHeight,\n    behavior: \"smooth\",\n  });\n}\n\n\n//# sourceURL=webpack:///./src/assets/js/scrollToSection.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/assets/js/accordion.js ./src/assets/js/blog-swiper.js ./src/assets/js/burgerMenu.js ./src/assets/js/fslightbox.js ./src/assets/js/hero-swiper.js ./src/assets/js/quotes-slider.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/accordion.js ./src/assets/js/blog-swiper.js ./src/assets/js/burgerMenu.js ./src/assets/js/fslightbox.js ./src/assets/js/hero-swiper.js ./src/assets/js/quotes-slider.js ./src/assets/js/scrollToSection.js ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/blog-swiper.js */\"./src/assets/js/blog-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/fslightbox.js */\"./src/assets/js/fslightbox.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/quotes-slider.js */\"./src/assets/js/quotes-slider.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/blog-swiper.js_./src/assets/js/burgerMenu.js_./src/assets/js/fslightbox.js_./src/assets/js/hero-swiper.js_./src/assets/js/quotes-slider.js?");
+eval("__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/accordion.js */\"./src/assets/js/accordion.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/blog-swiper.js */\"./src/assets/js/blog-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/burgerMenu.js */\"./src/assets/js/burgerMenu.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/fslightbox.js */\"./src/assets/js/fslightbox.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/hero-swiper.js */\"./src/assets/js/hero-swiper.js\");\n__webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/quotes-slider.js */\"./src/assets/js/quotes-slider.js\");\nmodule.exports = __webpack_require__(/*! /Users/rmyhailovich/www/blade/src/assets/js/scrollToSection.js */\"./src/assets/js/scrollToSection.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/accordion.js_./src/assets/js/blog-swiper.js_./src/assets/js/burgerMenu.js_./src/assets/js/fslightbox.js_./src/assets/js/hero-swiper.js_./src/assets/js/quotes-slider.js_./src/assets/js/scrollToSection.js?");
 
 /***/ })
 

@@ -17,7 +17,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
-const cache = require("gulp-cache");
+const newer = require("gulp-newer");
 
 
 /* Paths */
@@ -199,22 +199,11 @@ function jsWatch(cb) {
 
 function images(cb) {
     return src(path.src.images)
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 95, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    { removeViewBox: true },
-                    { cleanupIDs: false }
-                ]
-            })
-        ]))
-        .pipe(cache(imagemin({
-          interlaced: true
-        })))
-        .pipe(dest(path.build.images))
-        .pipe(browserSync.reload({stream: true}));
+    .pipe(newer(path.build.images))
+    .pipe(imagemin())
+    // .pipe(webp())
+    .pipe(dest(path.build.images))
+    .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
@@ -241,7 +230,7 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 
