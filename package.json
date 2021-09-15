@@ -26,6 +26,7 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.7.1",
+        "smoothscroll-polyfill": "^0.4.4",
         "webpack": "^5.4.0",
         "webpack-stream": "^6.1.0"
     },

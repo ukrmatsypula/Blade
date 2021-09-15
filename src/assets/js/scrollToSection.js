@@ -1,3 +1,6 @@
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
 const links = document.querySelectorAll("a[data-scroll]");
 const header = document.querySelector("header");
 const headerHeight = header.offsetHeight;
