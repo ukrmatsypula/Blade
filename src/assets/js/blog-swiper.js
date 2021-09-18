@@ -1,6 +1,6 @@
 const swiper = new Swiper(".slider-blog-container", {
   spaceBetween: 30,
-  loop: true,
+  loop: false,
   pagination: {
     el: ".section-blog .dots",
     clickable: true,

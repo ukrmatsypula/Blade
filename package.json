@@ -35,5 +35,7 @@
         "> 1%",
         "IE 10"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "@fancyapps/ui": "^4.0.4"
+    }
 }
